@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vamio · Protezione dei dati</title>
+<link rel="icon" href="../web-assets/favicon.ico" sizes="any">
+<link rel="stylesheet" href="../web-assets/fonts.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#262B44;--ink-2:#6E6779;--paper:#F6F1EA;--card:#FDFBF8;--line:#E6DED3;--blu:#3D4461;--or:#DD4F03;--cta:#D64A03;--tint:#FDEBDD}
+body{font-family:'Figtree',sans-serif;background:var(--paper);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
+a{color:var(--or)}
+h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.08}
+.nav{position:sticky;top:0;z-index:20;background:rgba(246,241,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:inset 0 -2px 0 var(--or)}
+.nav-in{max-width:1060px;margin:0 auto;padding:0 24px;height:66px;display:flex;align-items:center;gap:26px}
+.nav-in svg{height:24px;width:auto;display:block}
+.nav-in a{font-weight:600;font-size:14.5px;color:var(--ink-2);text-decoration:none}
+.nav-in a:hover,.nav-in a.on{color:var(--ink)}
+.nav-in .grow{flex:1}
+.nav-in .back{font-weight:700;color:var(--or)}
+header.h{max-width:1060px;margin:0 auto;padding:52px 24px 26px}
+header.h .eyebrow{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);display:flex;align-items:center;gap:10px}
+header.h .eyebrow::before{content:"";width:26px;height:2px;background:var(--or)}
+header.h h1{font-size:clamp(30px,4.4vw,44px);margin:12px 0 10px}
+header.h p{color:var(--ink-2);font-size:17px;max-width:62ch}
+.warn{max-width:1060px;margin:22px auto 0;padding:0 24px}
+.warn div{background:var(--tint);border:1px solid #F3C9AE;border-radius:12px;padding:16px 20px;font-size:14.5px}
+.warn b{color:var(--cta)}
+main{max-width:1060px;margin:0 auto;padding:30px 24px 70px;display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
+@media(max-width:860px){main{grid-template-columns:1fr}nav.toc{position:static!important}}
+nav.toc{position:sticky;top:90px;font-size:13.5px}
+nav.toc .lbl{font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+nav.toc a{display:block;padding:5px 0 5px 12px;border-left:2px solid var(--line);color:var(--ink-2);text-decoration:none}
+nav.toc a:hover{border-left-color:var(--or);color:var(--ink)}
+article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 38px}
+article h2{font-size:22px;margin:30px 0 10px;padding-top:6px}
+article h2:first-child{margin-top:0}
+article h3{font-size:17px;margin:20px 0 8px}
+article h4{font-size:15px;margin:16px 0 6px}
+article p{margin-bottom:11px;font-size:15px}
+ul.p{list-style:none;margin:6px 0 14px}
+ul.p li{padding:6px 0 6px 24px;position:relative;font-size:15px}
+ul.p li::before{content:"";position:absolute;left:3px;top:14px;width:10px;height:6px;border-left:2.2px solid var(--or);border-bottom:2.2px solid var(--or);transform:rotate(-45deg)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:14px;background:#fff}
+td{padding:10px 14px;border-bottom:1px solid #EFE9E1;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:first-child td{font-weight:700;background:#FAF6F0}
+code{font-weight:600;background:#EFE9E1;padding:1px 6px;border-radius:4px;font-size:.92em}
+mark{background:#FFE9D2;color:#8A3400;padding:1px 5px;border-radius:4px;font-weight:600}
+.nota{background:var(--tint);border:1px solid #F3C9AE;border-radius:10px;padding:12px 16px;font-size:14px;margin:12px 0}
+footer{background:var(--blu);color:#A6A3B5;padding:34px 0 44px;font-size:13px}
+.f-in{max-width:1060px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:#D9D7E2;text-decoration:none}
+footer b{color:#fff}
+</style></head><body>
+<nav class="nav"><div class="nav-in"><a href="../" aria-label="Vamio"><svg style="height:24px;width:auto" xmlns="http://www.w3.org/2000/svg" viewBox="-60 -800 4704 880" role="img" aria-label="Vamio">
+  <g transform="translate(0 -720.0) scale(1.42578125)">
+    <rect width="512" height="512" rx="118" fill="#3D4461"/>
+    <path d="M118 250 L225 380 L394 148" fill="none" stroke="#DD4F03" stroke-width="66" stroke-linecap="square" stroke-linejoin="miter"/>
+  </g>
+  <g transform="translate(960 0)">
+    <path fill="#3D4461" d="M254.7825927734375 0.0 3.9129638671875 -527.2174072265625H173.566650390625L283.6966552734375 -278.391845703125Q290.479248046875 -263.391845703125 299.93572998046875 -239.82666015625Q309.3922119140625 -216.261474609375 319.34869384765625 -191.9136962890625Q329.30517578125 -167.56591796875 336.6529541015625 -148.2181396484375H345.0877685546875Q352.6529541015625 -167.7833251953125 361.82684326171875 -192.23980712890625Q371.000732421875 -216.6962890625 380.2833251953125 -240.261474609375Q389.56591796875 -263.82666015625 396.3485107421875 -278.82666015625L505.60888671875 -527.2174072265625H670.175537109375L419.305908203125 0.0Z M944.0 12Q896.13037109375 12.0 854.8694458007812 4.60870361328125Q813.6085205078125 -2.7825927734375 782.6737060546875 -20.2825927734375Q751.7388916015625 -37.7825927734375 734.521484375 -67.89129638671875Q717.3040771484375 -98.0 717.3040771484375 -143.6522216796875Q717.3040771484375 -207.434814453125 751.9779663085938 -243.54351806640625Q786.65185546875 -279.6522216796875 850.217041015625 -295.97833251953125Q913.7822265625 -312.304443359375 999.2822265625 -316.5218505859375Q1084.7822265625 -320.7392578125 1185.8692626953125 -320.7392578125V-340.3477783203125Q1185.8692626953125 -372.825927734375 1169.9127807617188 -392.06500244140625Q1153.956298828125 -411.3040771484375 1121.4129638671875 -419.586669921875Q1088.86962890625 -427.8692626953125 1037.4351806640625 -427.8692626953125Q997.6529541015625 -427.8692626953125 965.3922119140625 -422.41278076171875Q933.1314697265625 -416.956298828125 914.1314697265625 -405.49981689453125Q895.1314697265625 -394.0433349609375 895.1314697265625 -375.825927734375V-365.565185546875H737.5648193359375Q736.5648193359375 -369.565185546875 736.1735229492188 -373.23907470703125Q735.7822265625 -376.9129638671875 735.7822265625 -381.695556640625Q735.7822265625 -428.695556640625 770.9779663085938 -464.13037109375Q806.1737060546875 -499.565185546875 875.565185546875 -519.3912963867188Q944.9566650390625 -539.2174072265625 1048.0003662109375 -539.2174072265625Q1143.6092529296875 -539.2174072265625 1209.2833251953125 -522.1087036132812Q1274.9573974609375 -505.0 1308.7618408203125 -466.2174072265625Q1342.5662841796875 -427.434814453125 1342.5662841796875 -361.86962890625V-141.391845703125Q1342.5662841796875 -123.0440673828125 1350.1749877929688 -112.71795654296875Q1357.78369140625 -102.391845703125 1376.1314697265625 -102.391845703125H1428.0010986328125V-5.6522216796875Q1416.2618408203125 -1.0 1388.0225830078125 5.5Q1359.7833251953125 12.0 1326.4788818359375 12.0Q1280.3048095703125 12.0 1253.7394409179688 1.32611083984375Q1227.174072265625 -9.3477783203125 1215.0435180664062 -27.695556640625Q1202.9129638671875 -46.0433349609375 1198.0433349609375 -68.1737060546875H1190.0433349609375Q1161.825927734375 -43.2607421875 1123.5868530273438 -24.9129638671875Q1085.3477783203125 -6.565185546875 1040.0 2.7174072265625Q994.6522216796875 12.0 944.0 12ZM985.1744384765625 -99.1307373046875Q1013.478515625 -99.1307373046875 1047.6957397460938 -105.36981201171875Q1081.9129638671875 -111.60888671875 1113.7172241210938 -124.13055419921875Q1145.521484375 -136.6522216796875 1165.6953735351562 -155.95648193359375Q1185.8692626953125 -175.2607421875 1185.8692626953125 -201.6085205078125V-229.9129638671875Q1079.304443359375 -229.9129638671875 1009.9351806640625 -222.195556640625Q940.56591796875 -214.4781494140625 906.9573974609375 -197.13037109375Q873.348876953125 -179.7825927734375 873.348876953125 -149.3914794921875Q873.348876953125 -128.043701171875 889.7618408203125 -117.36981201171875Q906.1748046875 -106.6959228515625 932.0442504882812 -102.913330078125Q957.9136962890625 -99.1307373046875 985.1744384765625 -99.1307373046875Z M1496.6085205078125 0.0V-527.2174072265625H1623.04443359375L1634.1314697265625 -438.0870361328125H1643.1314697265625Q1670.6966552734375 -476.2174072265625 1706.479248046875 -498.10870361328125Q1742.2618408203125 -520.0 1782.7618408203125 -529.6087036132812Q1823.2618408203125 -539.2174072265625 1861.9140625 -539.2174072265625Q1936.1314697265625 -539.2174072265625 1985.348876953125 -514.6087036132812Q2034.5662841796875 -490.0 2057.4359130859375 -438.0870361328125H2066.6533203125Q2095.0010986328125 -476.2174072265625 2131.1749877929688 -498.10870361328125Q2167.348876953125 -520.0 2207.848876953125 -529.6087036132812Q2248.348876953125 -539.2174072265625 2287.78369140625 -539.2174072265625Q2359.3055419921875 -539.2174072265625 2407.457763671875 -515.6738891601562Q2455.6099853515625 -492.13037109375 2479.9360961914062 -444.2607421875Q2504.26220703125 -396.39111328125 2504.26220703125 -322.956298828125V0.0H2347.565185546875V-298.3040771484375Q2347.565185546875 -329.477783203125 2339.3261108398438 -351.8907470703125Q2331.0870361328125 -374.3037109375 2315.7827758789062 -388.0863037109375Q2300.478515625 -401.868896484375 2278.6742553710938 -408.19500732421875Q2256.8699951171875 -414.5211181640625 2229.95703125 -414.5211181640625Q2189.9136962890625 -414.5211181640625 2155.30517578125 -397.28204345703125Q2120.6966552734375 -380.04296875 2099.5446166992188 -349.45611572265625Q2078.392578125 -318.8692626953125 2078.392578125 -278.0433349609375V0.0H1922.4781494140625V-298.3040771484375Q1922.4781494140625 -329.477783203125 1914.2390747070312 -351.8907470703125Q1906.0 -374.3037109375 1890.6957397460938 -388.0863037109375Q1875.3914794921875 -401.868896484375 1853.5872192382812 -408.19500732421875Q1831.782958984375 -414.5211181640625 1804.08740234375 -414.5211181640625Q1764.0440673828125 -414.5211181640625 1729.435546875 -397.28204345703125Q1694.8270263671875 -380.04296875 1674.0662841796875 -349.45611572265625Q1653.3055419921875 -318.8692626953125 1653.3055419921875 -278.0433349609375V0.0Z M2638.6085205078125 0.0V-527.2174072265625H2795.3055419921875V0.0Z M3243.95703125 12.0Q3141.2177734375 12.0 3066.4349975585938 -18.89129638671875Q2991.6522216796875 -49.7825927734375 2951.3042602539062 -111.17388916015625Q2910.956298828125 -172.565185546875 2910.956298828125 -264.0Q2910.956298828125 -356.2174072265625 2951.3042602539062 -417.32611083984375Q2991.6522216796875 -478.434814453125 3066.4349975585938 -508.82611083984375Q3141.2177734375 -539.2174072265625 3243.95703125 -539.2174072265625Q3346.6962890625 -539.2174072265625 3421.4790649414062 -508.82611083984375Q3496.2618408203125 -478.434814453125 3536.6098022460938 -417.32611083984375Q3576.957763671875 -356.2174072265625 3576.957763671875 -264.0Q3576.957763671875 -172.565185546875 3536.6098022460938 -111.17388916015625Q3496.2618408203125 -49.7825927734375 3421.4790649414062 -18.89129638671875Q3346.6962890625 12.0 3243.95703125 12.0ZM3243.95703125 -102.391845703125Q3298.4351806640625 -102.391845703125 3336.7611083984375 -120.56573486328125Q3375.0870361328125 -138.7396240234375 3394.9564819335938 -172.7177734375Q3414.825927734375 -206.6959228515625 3414.825927734375 -254.0V-274.0Q3414.825927734375 -322.086669921875 3394.9564819335938 -355.67352294921875Q3375.0870361328125 -389.2603759765625 3336.7611083984375 -407.04296875Q3298.4351806640625 -424.8255615234375 3243.95703125 -424.8255615234375Q3189.4788818359375 -424.8255615234375 3151.1529541015625 -407.04296875Q3112.8270263671875 -389.2603759765625 3092.9575805664062 -355.67352294921875Q3073.088134765625 -322.086669921875 3073.088134765625 -274.0V-254.0Q3073.088134765625 -206.6959228515625 3092.9575805664062 -172.7177734375Q3112.8270263671875 -138.7396240234375 3151.1529541015625 -120.56573486328125Q3189.4788818359375 -102.391845703125 3243.95703125 -102.391845703125Z"/>
+    <rect fill="#DD4F03" x="2622" y="-740" width="190" height="190"/>
+  </g>
+</svg>
+</a><a href="privacy.html" class="on">Protezione dei dati</a><a href="cookie.html" class="">Cookie</a><span class="grow"></span><a class="back" href="../">Torna al sito</a></div></nav>
+<header class="h"><div class="eyebrow">Documenti legali</div><h1>Protezione dei dati</h1><p>Quali dati trattiamo, dove stanno, per quanto tempo e quali diritti hai.</p></header>
+
+<main><nav class="toc"><div class="lbl">In questa pagina</div><a href="#1-chi-siamo">1. Chi siamo</a><a href="#2-i-due-ruoli-di-vamio-una-distinzione-i">2. I due ruoli di Vamio: una distinzione importante</a><a href="#3-quali-dati-trattiamo-e-per-quali-scopi">3. Quali dati trattiamo e per quali scopi</a><a href="#4-dove-sono-conservati-i-dati">4. Dove sono conservati i dati</a><a href="#5-a-chi-comunichiamo-i-dati">5. A chi comunichiamo i dati</a><a href="#6-per-quanto-tempo-conserviamo-i-dati">6. Per quanto tempo conserviamo i dati</a><a href="#7-export-dei-dati-portabilit">7. Export dei dati (portabilità)</a><a href="#8-sicurezza">8. Sicurezza</a><a href="#9-i-suoi-diritti">9. I Suoi diritti</a><a href="#10-cookie-e-tecnologie-simili">10. Cookie e tecnologie simili</a><a href="#11-modifiche-della-presente-informativa">11. Modifiche della presente informativa</a><a href="#12-contatto">12. Contatto</a></nav><article><p>Versione: bozza 0.1 del 27.08.2026</p>
+<h2 id="1-chi-siamo">1. Chi siamo</h2>
+<p>Il servizio Vamio (app <code>app.vamio.ch</code> e sito <code>vamio.ch</code>) è fornito da:</p>
+<p><b>VAM Deco Sagl</b></p>
+<p><mark>[indirizzo completo]</mark>, 6514 Sementina, Svizzera</p>
+<p>IDI: <mark>[CHE-xxx.xxx.xxx]</mark></p>
+<p>Email di contatto per la protezione dei dati: <mark>[privacy@vamio.ch]</mark></p>
+<p>Trattiamo i dati personali nel rispetto della <b>Legge federale svizzera sulla protezione dei dati (LPD)</b> e della relativa ordinanza (OPDa). Se in singoli casi fosse applicabile il Regolamento europeo (GDPR), ne rispettiamo i requisiti per quanto pertinente.</p>
+<p>La presente informativa spiega quali dati personali trattiamo, per quali scopi e quali diritti Le spettano. Si rivolge ai visitatori del sito, alle persone che si registrano al Servizio e agli utenti dell&#x27;app.</p>
+<h2 id="2-i-due-ruoli-di-vamio-una-distinzione-i">2. I due ruoli di Vamio: una distinzione importante</h2>
+<p><b>a. Dati del Suo account (noi come titolare del trattamento).</b> Per i dati che riguardano Lei come nostro cliente o utente (registrazione, fatturazione, utilizzo del Servizio, assistenza) siamo noi a decidere scopi e mezzi del trattamento. Questa informativa descrive questi trattamenti.</p>
+<p><b>b. Dati che Lei inserisce nel gestionale (noi come responsabile del trattamento).</b> Per i dati dei Suoi clienti e contatti che Lei inserisce nel Servizio (anagrafiche, offerte, fatture), il titolare del trattamento è Lei (o la Sua azienda). Noi li trattiamo solo per Suo conto, secondo l&#x27;<b>Accordo sul trattamento dei dati (DPA)</b> che accetta alla registrazione. Per domande su quei dati, le persone interessate devono rivolgersi all&#x27;azienda che li ha inseriti.</p>
+<h2 id="3-quali-dati-trattiamo-e-per-quali-scopi">3. Quali dati trattiamo e per quali scopi</h2>
+<h3 id="3-1-registrazione-e-gestione-dell-accoun">3.1 Registrazione e gestione dell&#x27;account</h3>
+<ul class="p">
+<li>Dati: nome, ditta/ragione sociale, indirizzo email (verificato), password (memorizzata in forma cifrata non reversibile), numero di telefono <mark>[se richiesto]</mark>, impostazioni dell&#x27;account, ruolo utente (Titolare o Collaboratore).</li>
+<li>Scopi: creazione e gestione dell&#x27;account, autenticazione (inclusa 2FA facoltativa), comunicazioni di servizio, prevenzione degli abusi.</li>
+</ul>
+<h3 id="3-2-abbonamento-e-fatturazione">3.2 Abbonamento e fatturazione</h3>
+<ul class="p">
+<li>Dati: piano sottoscritto, dati di fatturazione, storico pagamenti. I dati della carta di pagamento sono trattati direttamente dal fornitore di pagamento <b>Stripe</b>; noi non memorizziamo il numero completo della carta.</li>
+<li>Scopi: gestione dell&#x27;abbonamento, incasso dei canoni, contabilità e obblighi legali.</li>
+</ul>
+<h3 id="3-3-utilizzo-del-servizio-e-sicurezza">3.3 Utilizzo del Servizio e sicurezza</h3>
+<ul class="p">
+<li>Dati: log tecnici (indirizzo IP, data e ora di accesso, operazioni rilevanti registrate nel registro attività), dati sul dispositivo e browser in forma tecnica.</li>
+<li>Scopi: funzionamento e sicurezza del Servizio, individuazione di abusi e accessi non autorizzati, diagnostica, adempimento del principio di tracciabilità.</li>
+<li>Conservazione dei log: <mark>[indicare durata, proposta 6-12 mesi]</mark>.</li>
+</ul>
+<h3 id="3-4-anti-abuso-alla-registrazione">3.4 Anti-abuso alla registrazione</h3>
+<ul class="p">
+<li>Alla registrazione utilizziamo una protezione anti-bot (<mark>[Cloudflare Turnstile, da confermare]</mark>), che può trattare dati tecnici del Suo browser per distinguere persone reali da programmi automatici.</li>
+</ul>
+<h3 id="3-5-funzioni-ai-assistente-integrato">3.5 Funzioni AI (assistente integrato)</h3>
+<ul class="p">
+<li>Se il Suo piano include le Funzioni AI e Lei le utilizza, il testo delle Sue richieste (chat o dettatura vocale) e i dati necessari all&#x27;elaborazione vengono trasmessi a un fornitore terzo di intelligenza artificiale (si veda la sezione 5).</li>
+<li>Le conversazioni con l&#x27;assistente AI sono conservate per impostazione predefinita per <b>90 giorni</b>, poi cancellate <mark>[durata modificabile nelle impostazioni]</mark>.</li>
+<li>Le Funzioni AI sono <b>facoltative e disattivabili in ogni momento</b> dalle impostazioni del Suo account.</li>
+</ul>
+<h3 id="3-6-assistenza-e-comunicazioni">3.6 Assistenza e comunicazioni</h3>
+<ul class="p">
+<li>Dati: contenuto delle richieste di assistenza e relativa corrispondenza.</li>
+<li>Scopi: fornirLe supporto, migliorare il Servizio.</li>
+</ul>
+<h3 id="3-7-sito-web-e-newsletter-da-completare-">3.7 Sito web e newsletter <mark>[da completare al lancio del sito]</mark></h3>
+<ul class="p">
+<li><mark>[Descrivere: eventuali statistiche di visita, strumenti utilizzati, eventuale newsletter con iscrizione volontaria e possibilità di disiscrizione in ogni email.]</mark></li>
+</ul>
+<h2 id="4-dove-sono-conservati-i-dati">4. Dove sono conservati i dati</h2>
+<p><b>I dati del Servizio sono ospitati in Svizzera</b>, presso Infomaniak (Ginevra). Questo vale sia per i dati del Suo account sia per i dati che Lei inserisce nel gestionale.</p>
+<p><b>Unica eccezione</b>: l&#x27;utilizzo delle Funzioni AI comporta la trasmissione del testo da elaborare al fornitore AI, i cui server possono trovarsi anche al di fuori della Svizzera (sezione 5).</p>
+<h2 id="5-a-chi-comunichiamo-i-dati">5. A chi comunichiamo i dati</h2>
+<p>Comunichiamo dati personali solo nella misura necessaria all&#x27;erogazione del Servizio, ai seguenti destinatari:</p>
+<div class="tw"><table><tbody>
+<tr><td>Destinatario</td><td>Funzione</td><td>Sede / trasferimento</td></tr>
+<tr><td>Infomaniak Network SA</td><td>Hosting dell&#x27;infrastruttura e dei dati</td><td>Svizzera</td></tr>
+<tr><td>Stripe <mark>[entità da specificare]</mark></td><td>Elaborazione dei pagamenti degli abbonamenti</td><td>UE/USA <mark>[garanzie da verificare con il legale]</mark></td></tr>
+<tr><td><mark>[Fornitore AI: attualmente Google, servizio Gemini, entità da specificare]</mark></td><td>Elaborazione delle richieste delle Funzioni AI, solo se attivate e utilizzate</td><td>Anche fuori Svizzera <mark>[garanzie art. 16 LPD da documentare: Stato adeguato, clausole standard o Swiss-U.S. Data Privacy Framework]</mark></td></tr>
+<tr><td><mark>[Cloudflare, da confermare]</mark></td><td>Protezione anti-bot alla registrazione <mark>[ed eventuale protezione del sito]</mark></td><td>UE/USA <mark>[da verificare]</mark></td></tr>
+</tbody></table></div>
+<p>Oltre a questi casi, comunichiamo dati solo se richiesto dalla legge o da un&#x27;autorità competente, o con il Suo consenso.</p>
+<p>Non vendiamo i Suoi dati e non li utilizziamo per pubblicità di terzi.</p>
+<h2 id="6-per-quanto-tempo-conserviamo-i-dati">6. Per quanto tempo conserviamo i dati</h2>
+<ul class="p">
+<li><b>Account attivo</b>: per tutta la durata del contratto.</li>
+<li><b>Dopo la cessazione del contratto</b> (disdetta, mancato pagamento, fine del periodo di prova senza sottoscrizione): i dati dell&#x27;account e del gestionale restano <b>congelati per 60 giorni</b> (con promemoria via email), per permetterLe di riattivare l&#x27;account o esportare i dati. Trascorsi i 60 giorni, i dati vengono <b>cancellati definitivamente</b>, salvo obblighi legali di conservazione a nostro carico (ad esempio documenti contabili nostri) e salvo copie di backup, eliminate con la normale rotazione entro <mark>[indicare periodo]</mark>.</li>
+<li><b>Conversazioni AI</b>: 90 giorni per impostazione predefinita.</li>
+<li><b>Log tecnici</b>: <mark>[6-12 mesi, da definire]</mark>.</li>
+<li><b>Avvertenza</b>: gli obblighi legali di conservazione dei documenti commerciali della Sua azienda (in particolare 10 anni per le fatture, art. 958f CO) restano a Suo carico. Prima della cancellazione deve esportare i Suoi documenti con la funzione di export ZIP.</li>
+</ul>
+<h2 id="7-export-dei-dati-portabilit">7. Export dei dati (portabilità)</h2>
+<p>Dall&#x27;app può in ogni momento esportare autonomamente tutti i Suoi dati e documenti in un <b>archivio ZIP completo</b> (dati strutturati + PDF), senza costi aggiuntivi e senza doverci contattare.</p>
+<h2 id="8-sicurezza">8. Sicurezza</h2>
+<p>Adottiamo misure tecniche e organizzative adeguate a proteggere i Suoi dati, tra cui: isolamento dei dati per cliente imposto a livello di database, cifratura del traffico, autenticazione con verifica email e 2FA facoltativa, registro delle attività, backup regolari, accessi ai sistemi limitati e protetti. Il dettaglio delle misure è descritto nell&#x27;allegato B del DPA.</p>
+<h2 id="9-i-suoi-diritti">9. I Suoi diritti</h2>
+<p>Ai sensi della LPD Lei ha il diritto di:</p>
+<ul class="p">
+<li><b>accesso</b>: sapere se trattiamo dati che La riguardano e riceverne copia (art. 25 LPD);</li>
+<li><b>consegna e trasmissione</b>: ricevere in un formato elettronico corrente i dati che ci ha comunicato (art. 28 LPD); nel Servizio questo diritto è coperto anche dall&#x27;export ZIP self-service;</li>
+<li><b>rettifica</b>: far correggere dati inesatti (art. 32 LPD);</li>
+<li><b>cancellazione</b>: chiedere la cancellazione dei dati, nei limiti degli obblighi legali di conservazione;</li>
+<li><b>opposizione</b>: opporsi a un trattamento determinato.</li>
+</ul>
+<p>Per esercitare i Suoi diritti può scriverci a <mark>[privacy@vamio.ch]</mark>. Potremmo chiederLe una prova d&#x27;identità per proteggere i Suoi dati da richieste abusive. Rispondiamo di regola entro 30 giorni.</p>
+<p>Se ritiene che il trattamento violi la legge, può rivolgersi all&#x27;<b>Incaricato federale della protezione dei dati e della trasparenza (IFPDT)</b>, Feldeggweg 1, 3003 Berna (www.edoeb.admin.ch).</p>
+<p>Nota: per i dati inseriti nel gestionale da una azienda cliente di Vamio (ad esempio se Lei ha ricevuto un&#x27;offerta o una fattura da una ditta che usa Vamio), il titolare del trattamento è quella ditta: La invitiamo a rivolgersi direttamente a lei. Se una richiesta arriva a noi, la inoltriamo alla ditta interessata.</p>
+<h2 id="10-cookie-e-tecnologie-simili">10. Cookie e tecnologie simili</h2>
+<p><mark>[Sezione da completare quando sito e app saranno definitivi. Impostazione prevista: solo cookie tecnici necessari al funzionamento e alla sessione di login; eventuali statistiche con strumenti rispettosi della privacy da elencare; nessun cookie pubblicitario di terzi. Se verranno usati strumenti soggetti a consenso, aggiungere banner e gestione del consenso.]</mark></p>
+<h2 id="11-modifiche-della-presente-informativa">11. Modifiche della presente informativa</h2>
+<p>Possiamo aggiornare questa informativa quando necessario (ad esempio per nuove funzioni o nuovi fornitori). La versione aggiornata è sempre pubblicata sul sito e nell&#x27;app, con la data della versione. In caso di modifiche sostanziali La informeremo via email o con un avviso nell&#x27;app.</p>
+<h2 id="12-contatto">12. Contatto</h2>
+<p>Per ogni domanda sulla protezione dei dati:</p>
+<p><b>VAM Deco Sagl</b></p>
+<p><mark>[indirizzo completo]</mark>, 6514 Sementina, Svizzera</p>
+<p><mark>[privacy@vamio.ch]</mark></p>
+<p>*Ultima modifica: <mark>[data di pubblicazione]</mark>. Bozza 0.1 del 27.08.2026, in attesa di revisione legale.*</p></article></main>
+<footer><div class="f-in"><div><b>Vamio</b> è un prodotto di VAM Deco Sagl · Via Pobbia 4d, 6514 Sementina, Svizzera<br>amministrazione@vamdeco.ch · +41 76 588 94 97</div>
+<div><a href="privacy.html">Protezione dei dati</a> · <a href="cookie.html">Cookie</a></div></div></footer>
+</body></html>
