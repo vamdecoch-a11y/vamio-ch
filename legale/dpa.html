@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vamio · Trattamento dei dati su mandato</title>
+<link rel="icon" href="../web-assets/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#262B44;--ink-2:#6E6779;--paper:#F6F1EA;--card:#FDFBF8;--line:#E6DED3;--blu:#3D4461;--or:#DD4F03;--cta:#D64A03;--tint:#FDEBDD}
+body{font-family:'Figtree',sans-serif;background:var(--paper);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
+a{color:var(--or)}
+h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.08}
+.nav{position:sticky;top:0;z-index:20;background:rgba(246,241,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:inset 0 -2px 0 var(--or)}
+.nav-in{max-width:1060px;margin:0 auto;padding:0 24px;height:66px;display:flex;align-items:center;gap:26px}
+.nav-in svg{height:24px;width:auto;display:block}
+.nav-in a{font-weight:600;font-size:14.5px;color:var(--ink-2);text-decoration:none}
+.nav-in a:hover,.nav-in a.on{color:var(--ink)}
+.nav-in .grow{flex:1}
+.nav-in .back{font-weight:700;color:var(--or)}
+header.h{max-width:1060px;margin:0 auto;padding:52px 24px 26px}
+header.h .eyebrow{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);display:flex;align-items:center;gap:10px}
+header.h .eyebrow::before{content:"";width:26px;height:2px;background:var(--or)}
+header.h h1{font-size:clamp(30px,4.4vw,44px);margin:12px 0 10px}
+header.h p{color:var(--ink-2);font-size:17px;max-width:62ch}
+.warn{max-width:1060px;margin:22px auto 0;padding:0 24px}
+.warn div{background:var(--tint);border:1px solid #F3C9AE;border-radius:12px;padding:16px 20px;font-size:14.5px}
+.warn b{color:var(--cta)}
+main{max-width:1060px;margin:0 auto;padding:30px 24px 70px;display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
+@media(max-width:860px){main{grid-template-columns:1fr}nav.toc{position:static!important}}
+nav.toc{position:sticky;top:90px;font-size:13.5px}
+nav.toc .lbl{font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+nav.toc a{display:block;padding:5px 0 5px 12px;border-left:2px solid var(--line);color:var(--ink-2);text-decoration:none}
+nav.toc a:hover{border-left-color:var(--or);color:var(--ink)}
+article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 38px}
+article h2{font-size:22px;margin:30px 0 10px;padding-top:6px}
+article h2:first-child{margin-top:0}
+article h3{font-size:17px;margin:20px 0 8px}
+article h4{font-size:15px;margin:16px 0 6px}
+article p{margin-bottom:11px;font-size:15px}
+ul.p{list-style:none;margin:6px 0 14px}
+ul.p li{padding:6px 0 6px 24px;position:relative;font-size:15px}
+ul.p li::before{content:"";position:absolute;left:3px;top:14px;width:10px;height:6px;border-left:2.2px solid var(--or);border-bottom:2.2px solid var(--or);transform:rotate(-45deg)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:14px;background:#fff}
+td{padding:10px 14px;border-bottom:1px solid #EFE9E1;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:first-child td{font-weight:700;background:#FAF6F0}
+code{font-weight:600;background:#EFE9E1;padding:1px 6px;border-radius:4px;font-size:.92em}
+mark{background:#FFE9D2;color:#8A3400;padding:1px 5px;border-radius:4px;font-weight:600}
+.nota{background:var(--tint);border:1px solid #F3C9AE;border-radius:10px;padding:12px 16px;font-size:14px;margin:12px 0}
+footer{background:var(--blu);color:#A6A3B5;padding:34px 0 44px;font-size:13px}
+.f-in{max-width:1060px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:#D9D7E2;text-decoration:none}
+footer b{color:#fff}
+</style></head><body>
+<nav class="nav"><div class="nav-in"><a href="../" aria-label="Vamio"><svg style="height:24px;width:auto" xmlns="http://www.w3.org/2000/svg" viewBox="-60 -800 4704 880" role="img" aria-label="Vamio">
+  <g transform="translate(0 -720.0) scale(1.42578125)">
+    <rect width="512" height="512" rx="118" fill="#3D4461"/>
+    <path d="M118 250 L225 380 L394 148" fill="none" stroke="#DD4F03" stroke-width="66" stroke-linecap="square" stroke-linejoin="miter"/>
+  </g>
+  <g transform="translate(960 0)">
+    <path fill="#3D4461" d="M254.7825927734375 0.0 3.9129638671875 -527.2174072265625H173.566650390625L283.6966552734375 -278.391845703125Q290.479248046875 -263.391845703125 299.93572998046875 -239.82666015625Q309.3922119140625 -216.261474609375 319.34869384765625 -191.9136962890625Q329.30517578125 -167.56591796875 336.6529541015625 -148.2181396484375H345.0877685546875Q352.6529541015625 -167.7833251953125 361.82684326171875 -192.23980712890625Q371.000732421875 -216.6962890625 380.2833251953125 -240.261474609375Q389.56591796875 -263.82666015625 396.3485107421875 -278.82666015625L505.60888671875 -527.2174072265625H670.175537109375L419.305908203125 0.0Z M944.0 12Q896.13037109375 12.0 854.8694458007812 4.60870361328125Q813.6085205078125 -2.7825927734375 782.6737060546875 -20.2825927734375Q751.7388916015625 -37.7825927734375 734.521484375 -67.89129638671875Q717.3040771484375 -98.0 717.3040771484375 -143.6522216796875Q717.3040771484375 -207.434814453125 751.9779663085938 -243.54351806640625Q786.65185546875 -279.6522216796875 850.217041015625 -295.97833251953125Q913.7822265625 -312.304443359375 999.2822265625 -316.5218505859375Q1084.7822265625 -320.7392578125 1185.8692626953125 -320.7392578125V-340.3477783203125Q1185.8692626953125 -372.825927734375 1169.9127807617188 -392.06500244140625Q1153.956298828125 -411.3040771484375 1121.4129638671875 -419.586669921875Q1088.86962890625 -427.8692626953125 1037.4351806640625 -427.8692626953125Q997.6529541015625 -427.8692626953125 965.3922119140625 -422.41278076171875Q933.1314697265625 -416.956298828125 914.1314697265625 -405.49981689453125Q895.1314697265625 -394.0433349609375 895.1314697265625 -375.825927734375V-365.565185546875H737.5648193359375Q736.5648193359375 -369.565185546875 736.1735229492188 -373.23907470703125Q735.7822265625 -376.9129638671875 735.7822265625 -381.695556640625Q735.7822265625 -428.695556640625 770.9779663085938 -464.13037109375Q806.1737060546875 -499.565185546875 875.565185546875 -519.3912963867188Q944.9566650390625 -539.2174072265625 1048.0003662109375 -539.2174072265625Q1143.6092529296875 -539.2174072265625 1209.2833251953125 -522.1087036132812Q1274.9573974609375 -505.0 1308.7618408203125 -466.2174072265625Q1342.5662841796875 -427.434814453125 1342.5662841796875 -361.86962890625V-141.391845703125Q1342.5662841796875 -123.0440673828125 1350.1749877929688 -112.71795654296875Q1357.78369140625 -102.391845703125 1376.1314697265625 -102.391845703125H1428.0010986328125V-5.6522216796875Q1416.2618408203125 -1.0 1388.0225830078125 5.5Q1359.7833251953125 12.0 1326.4788818359375 12.0Q1280.3048095703125 12.0 1253.7394409179688 1.32611083984375Q1227.174072265625 -9.3477783203125 1215.0435180664062 -27.695556640625Q1202.9129638671875 -46.0433349609375 1198.0433349609375 -68.1737060546875H1190.0433349609375Q1161.825927734375 -43.2607421875 1123.5868530273438 -24.9129638671875Q1085.3477783203125 -6.565185546875 1040.0 2.7174072265625Q994.6522216796875 12.0 944.0 12ZM985.1744384765625 -99.1307373046875Q1013.478515625 -99.1307373046875 1047.6957397460938 -105.36981201171875Q1081.9129638671875 -111.60888671875 1113.7172241210938 -124.13055419921875Q1145.521484375 -136.6522216796875 1165.6953735351562 -155.95648193359375Q1185.8692626953125 -175.2607421875 1185.8692626953125 -201.6085205078125V-229.9129638671875Q1079.304443359375 -229.9129638671875 1009.9351806640625 -222.195556640625Q940.56591796875 -214.4781494140625 906.9573974609375 -197.13037109375Q873.348876953125 -179.7825927734375 873.348876953125 -149.3914794921875Q873.348876953125 -128.043701171875 889.7618408203125 -117.36981201171875Q906.1748046875 -106.6959228515625 932.0442504882812 -102.913330078125Q957.9136962890625 -99.1307373046875 985.1744384765625 -99.1307373046875Z M1496.6085205078125 0.0V-527.2174072265625H1623.04443359375L1634.1314697265625 -438.0870361328125H1643.1314697265625Q1670.6966552734375 -476.2174072265625 1706.479248046875 -498.10870361328125Q1742.2618408203125 -520.0 1782.7618408203125 -529.6087036132812Q1823.2618408203125 -539.2174072265625 1861.9140625 -539.2174072265625Q1936.1314697265625 -539.2174072265625 1985.348876953125 -514.6087036132812Q2034.5662841796875 -490.0 2057.4359130859375 -438.0870361328125H2066.6533203125Q2095.0010986328125 -476.2174072265625 2131.1749877929688 -498.10870361328125Q2167.348876953125 -520.0 2207.848876953125 -529.6087036132812Q2248.348876953125 -539.2174072265625 2287.78369140625 -539.2174072265625Q2359.3055419921875 -539.2174072265625 2407.457763671875 -515.6738891601562Q2455.6099853515625 -492.13037109375 2479.9360961914062 -444.2607421875Q2504.26220703125 -396.39111328125 2504.26220703125 -322.956298828125V0.0H2347.565185546875V-298.3040771484375Q2347.565185546875 -329.477783203125 2339.3261108398438 -351.8907470703125Q2331.0870361328125 -374.3037109375 2315.7827758789062 -388.0863037109375Q2300.478515625 -401.868896484375 2278.6742553710938 -408.19500732421875Q2256.8699951171875 -414.5211181640625 2229.95703125 -414.5211181640625Q2189.9136962890625 -414.5211181640625 2155.30517578125 -397.28204345703125Q2120.6966552734375 -380.04296875 2099.5446166992188 -349.45611572265625Q2078.392578125 -318.8692626953125 2078.392578125 -278.0433349609375V0.0H1922.4781494140625V-298.3040771484375Q1922.4781494140625 -329.477783203125 1914.2390747070312 -351.8907470703125Q1906.0 -374.3037109375 1890.6957397460938 -388.0863037109375Q1875.3914794921875 -401.868896484375 1853.5872192382812 -408.19500732421875Q1831.782958984375 -414.5211181640625 1804.08740234375 -414.5211181640625Q1764.0440673828125 -414.5211181640625 1729.435546875 -397.28204345703125Q1694.8270263671875 -380.04296875 1674.0662841796875 -349.45611572265625Q1653.3055419921875 -318.8692626953125 1653.3055419921875 -278.0433349609375V0.0Z M2638.6085205078125 0.0V-527.2174072265625H2795.3055419921875V0.0Z M3243.95703125 12.0Q3141.2177734375 12.0 3066.4349975585938 -18.89129638671875Q2991.6522216796875 -49.7825927734375 2951.3042602539062 -111.17388916015625Q2910.956298828125 -172.565185546875 2910.956298828125 -264.0Q2910.956298828125 -356.2174072265625 2951.3042602539062 -417.32611083984375Q2991.6522216796875 -478.434814453125 3066.4349975585938 -508.82611083984375Q3141.2177734375 -539.2174072265625 3243.95703125 -539.2174072265625Q3346.6962890625 -539.2174072265625 3421.4790649414062 -508.82611083984375Q3496.2618408203125 -478.434814453125 3536.6098022460938 -417.32611083984375Q3576.957763671875 -356.2174072265625 3576.957763671875 -264.0Q3576.957763671875 -172.565185546875 3536.6098022460938 -111.17388916015625Q3496.2618408203125 -49.7825927734375 3421.4790649414062 -18.89129638671875Q3346.6962890625 12.0 3243.95703125 12.0ZM3243.95703125 -102.391845703125Q3298.4351806640625 -102.391845703125 3336.7611083984375 -120.56573486328125Q3375.0870361328125 -138.7396240234375 3394.9564819335938 -172.7177734375Q3414.825927734375 -206.6959228515625 3414.825927734375 -254.0V-274.0Q3414.825927734375 -322.086669921875 3394.9564819335938 -355.67352294921875Q3375.0870361328125 -389.2603759765625 3336.7611083984375 -407.04296875Q3298.4351806640625 -424.8255615234375 3243.95703125 -424.8255615234375Q3189.4788818359375 -424.8255615234375 3151.1529541015625 -407.04296875Q3112.8270263671875 -389.2603759765625 3092.9575805664062 -355.67352294921875Q3073.088134765625 -322.086669921875 3073.088134765625 -274.0V-254.0Q3073.088134765625 -206.6959228515625 3092.9575805664062 -172.7177734375Q3112.8270263671875 -138.7396240234375 3151.1529541015625 -120.56573486328125Q3189.4788818359375 -102.391845703125 3243.95703125 -102.391845703125Z"/>
+    <rect fill="#DD4F03" x="2622" y="-740" width="190" height="190"/>
+  </g>
+</svg>
+</a><a href="condizioni.html" class="">Condizioni d'uso</a><a href="privacy.html" class="">Protezione dei dati</a><a href="dpa.html" class="on">Trattamento dei dati su mandato</a><a href="cookie.html" class="">Cookie</a><span class="grow"></span><a class="back" href="../">Torna al sito</a></div></nav>
+<header class="h"><div class="eyebrow">Documenti legali</div><h1>Trattamento dei dati su mandato</h1><p>L'accordo che regola il trattamento dei dati dei tuoi clienti dentro Vamio.</p></header>
+
+<main><nav class="toc"><div class="lbl">In questa pagina</div><a href="#premessa">Premessa</a><a href="#1-oggetto-e-durata">1. Oggetto e durata</a><a href="#2-natura-finalit-e-mezzi-del-trattamento">2. Natura, finalità e mezzi del trattamento</a><a href="#3-categorie-di-dati-e-di-persone-interes">3. Categorie di dati e di persone interessate</a><a href="#4-obblighi-del-responsabile">4. Obblighi del Responsabile</a><a href="#5-sub-responsabili">5. Sub-responsabili</a><a href="#6-localizzazione-dei-dati-e-comunicazion">6. Localizzazione dei dati e comunicazione all&#x27;estero</a><a href="#7-assistenza-per-i-diritti-delle-persone">7. Assistenza per i diritti delle persone interessate</a><a href="#8-verifiche">8. Verifiche</a><a href="#9-restituzione-e-cancellazione-dei-dati">9. Restituzione e cancellazione dei dati</a><a href="#10-responsabilit-e-disposizioni-finali">10. Responsabilità e disposizioni finali</a><a href="#allegato-a-dettagli-del-trattamento">Allegato A: dettagli del trattamento</a><a href="#allegato-b-misure-tecniche-e-organizzati">Allegato B: misure tecniche e organizzative (TOM)</a><a href="#allegato-c-sub-responsabili-autorizzati">Allegato C: sub-responsabili autorizzati</a></nav><article><p>Versione: bozza 0.1 del 27.08.2026</p>
+<h2 id="premessa">Premessa</h2>
+<p>Il presente Accordo sul trattamento dei dati (di seguito &quot;DPA&quot;) integra le Condizioni generali d&#x27;uso del servizio Vamio e disciplina il trattamento di dati personali che <b>VAM Deco Sagl</b>, <mark>[indirizzo completo]</mark>, 6514 Sementina, Svizzera (di seguito il &quot;Responsabile&quot;) effettua <b>su mandato del Cliente</b> (di seguito il &quot;Titolare&quot;) nell&#x27;ambito dell&#x27;erogazione del servizio Vamio, ai sensi dell&#x27;<b>art. 9 della Legge federale sulla protezione dei dati (LPD)</b> e, ove applicabile, dell&#x27;art. 28 del Regolamento (UE) 2016/679 (GDPR).</p>
+<p>Il DPA è accettato elettronicamente dal Titolare contestualmente alla registrazione, insieme alle Condizioni d&#x27;uso, ed è scaricabile in PDF in ogni momento dall&#x27;app.</p>
+<p><b>Ripartizione dei ruoli</b>: il Cliente resta titolare del trattamento per tutti i dati personali che inserisce nel Servizio (in particolare i dati dei propri clienti finali e contatti). VAM Deco Sagl tratta tali dati esclusivamente come responsabile, per conto e su istruzione del Cliente. Per i dati relativi all&#x27;account del Cliente stesso (dati di registrazione, fatturazione, utilizzo), VAM Deco Sagl agisce invece come titolare autonomo: tali trattamenti sono descritti nell&#x27;informativa privacy di Vamio e non sono oggetto del presente DPA.</p>
+<h2 id="1-oggetto-e-durata">1. Oggetto e durata</h2>
+<p>1.1 Oggetto del DPA è il trattamento dei Dati del Cliente contenenti dati personali, effettuato dal Responsabile per erogare il servizio Vamio (hosting, memorizzazione, elaborazione, generazione documenti, invio email per conto del Titolare, backup, assistenza).</p>
+<p>1.2 Il DPA ha la stessa durata del contratto di servizio e cessa con la cancellazione definitiva dei dati ai sensi dell&#x27;art. 9.</p>
+<h2 id="2-natura-finalit-e-mezzi-del-trattamento">2. Natura, finalità e mezzi del trattamento</h2>
+<p>2.1 Il trattamento avviene esclusivamente per l&#x27;erogazione delle funzionalità del Servizio richieste dal Titolare: gestione anagrafiche, creazione e invio di offerte e fatture (incluse QR-Bill), richiami di pagamento, archiviazione documenti, statistiche interne al tenant, funzioni AI se attivate, export dei dati.</p>
+<p>2.2 Il trattamento avviene con strumenti informatici, su infrastruttura situata in <b>Svizzera</b> (hosting Infomaniak), fatta salva l&#x27;eccezione delle Funzioni AI di cui all&#x27;art. 6.</p>
+<h2 id="3-categorie-di-dati-e-di-persone-interes">3. Categorie di dati e di persone interessate</h2>
+<p>3.1 <b>Categorie di persone interessate</b>: clienti finali del Titolare e loro referenti, contatti commerciali, destinatari di offerte e fatture, collaboratori del Titolare i cui dati compaiono nei documenti.</p>
+<p>3.2 <b>Categorie di dati personali</b>: dati identificativi e di contatto (nome, ditta, indirizzo, email, telefono), dati contrattuali e commerciali (offerte, ordini, prezzi, condizioni), dati di fatturazione e pagamento (importi, coordinate per QR-Bill, stato pagamenti), corrispondenza generata dal Servizio, eventuali ulteriori dati liberamente inseriti dal Titolare in campi di testo.</p>
+<p>3.3 Il Servizio non è destinato al trattamento di <b>dati personali degni di particolare protezione</b> (art. 5 lett. c LPD). Se il Titolare sceglie di inserirne, lo fa sotto la propria esclusiva responsabilità.</p>
+<h2 id="4-obblighi-del-responsabile">4. Obblighi del Responsabile</h2>
+<p>Il Responsabile si impegna a:</p>
+<p>a. trattare i dati esclusivamente per le finalità di cui all&#x27;art. 2 e secondo le istruzioni documentate del Titolare; le funzioni del Servizio e le relative configurazioni scelte dal Titolare costituiscono istruzione documentata;</p>
+<p>b. garantire che le persone autorizzate al trattamento siano vincolate alla riservatezza;</p>
+<p>c. adottare misure tecniche e organizzative adeguate a garantire una sicurezza dei dati conforme agli art. 8 LPD e 1 segg. OPDa (Allegato B);</p>
+<p>d. assistere il Titolare, per quanto ragionevolmente possibile e tenuto conto della natura del trattamento, nell&#x27;adempimento degli obblighi verso le persone interessate (diritto d&#x27;accesso, rettifica, cancellazione, consegna dei dati) e verso le autorità;</p>
+<p>e. notificare al Titolare <b>senza ingiustificato ritardo</b> <mark>[proposta: entro 48 ore dalla presa di conoscenza]</mark> ogni violazione della sicurezza dei dati che riguardi i Dati del Cliente, fornendo le informazioni disponibili sulla natura della violazione, le categorie di dati coinvolte e le misure adottate;</p>
+<p>f. informare il Titolare se ritiene che un&#x27;istruzione violi il diritto in materia di protezione dei dati;</p>
+<p>g. tenere un registro delle attività di trattamento ove richiesto dalla legge;</p>
+<p>h. non trattare i dati per finalità proprie.</p>
+<h2 id="5-sub-responsabili">5. Sub-responsabili</h2>
+<p>5.1 Il Titolare autorizza in via generale il ricorso ai sub-responsabili elencati nell&#x27;<b>Allegato C</b>.</p>
+<p>5.2 Il Responsabile impone a ogni sub-responsabile, tramite contratto, obblighi di protezione dei dati sostanzialmente equivalenti a quelli del presente DPA e risponde dell&#x27;operato dei sub-responsabili come del proprio.</p>
+<p>5.3 Il Responsabile informa il Titolare in anticipo <mark>[proposta: almeno 30 giorni]</mark> di ogni aggiunta o sostituzione di sub-responsabili, tramite email o avviso nell&#x27;app. Il Titolare può opporsi per motivi giustificati; in caso di opposizione e in assenza di soluzione alternativa ragionevole, il Titolare può disdire il contratto con effetto alla data di entrata in vigore della modifica.</p>
+<h2 id="6-localizzazione-dei-dati-e-comunicazion">6. Localizzazione dei dati e comunicazione all&#x27;estero</h2>
+<p>6.1 I Dati del Cliente sono memorizzati ed elaborati su server situati in <b>Svizzera</b> (Infomaniak). Questa localizzazione è garantita contrattualmente.</p>
+<p>6.2 <b>Unica eccezione, Funzioni AI</b>: se il Titolare attiva e utilizza le Funzioni AI, il testo da elaborare (e i dati personali in esso eventualmente contenuti) è trasmesso al fornitore AI indicato nell&#x27;Allegato C, i cui server possono trovarsi al di fuori della Svizzera. La comunicazione all&#x27;estero avviene nel rispetto degli art. 16 e 17 LPD: verso Stati con un livello di protezione adeguato riconosciuto dal Consiglio federale, oppure sulla base di garanzie appropriate (in particolare clausole contrattuali standard riconosciute) <mark>[da verificare con il legale per il fornitore concreto, incluso l&#x27;eventuale Swiss-U.S. Data Privacy Framework]</mark>.</p>
+<p>6.3 Le Funzioni AI sono <b>disattivabili dal Titolare in ogni momento</b> nelle impostazioni. Con le Funzioni AI disattivate non avviene alcuna trasmissione di dati al fornitore AI.</p>
+<p>6.4 Al di fuori di quanto previsto ai punti precedenti, il Responsabile non comunica i Dati del Cliente all&#x27;estero senza previa autorizzazione del Titolare.</p>
+<h2 id="7-assistenza-per-i-diritti-delle-persone">7. Assistenza per i diritti delle persone interessate</h2>
+<p>7.1 Se una persona interessata esercita i propri diritti direttamente presso il Responsabile in relazione a dati trattati per conto del Titolare, il Responsabile inoltra la richiesta al Titolare senza ingiustificato ritardo e non vi risponde autonomamente, salvo obbligo legale.</p>
+<p>7.2 Il Servizio mette a disposizione del Titolare strumenti self-service utili all&#x27;adempimento delle richieste (ricerca, rettifica, export, annullamento di documenti nei limiti degli obblighi legali di conservazione).</p>
+<h2 id="8-verifiche">8. Verifiche</h2>
+<p>8.1 Il Responsabile mette a disposizione del Titolare le informazioni ragionevolmente necessarie a dimostrare il rispetto del presente DPA (in particolare la descrizione delle misure di cui all&#x27;Allegato B e, ove disponibili, certificazioni o rapporti di audit dei sub-fornitori, ad esempio dell&#x27;hosting).</p>
+<p>8.2 Il Titolare può richiedere, al massimo <mark>[una volta all&#x27;anno]</mark> e con congruo preavviso, una verifica documentale. Verifiche in loco sono possibili solo per fondati motivi, in orari lavorativi, senza compromettere la sicurezza degli altri clienti e a spese del Titolare. <mark>[Clausola da calibrare con il legale.]</mark></p>
+<h2 id="9-restituzione-e-cancellazione-dei-dati">9. Restituzione e cancellazione dei dati</h2>
+<p>9.1 Il Titolare può esportare autonomamente e in ogni momento tutti i propri dati tramite la funzione di <b>export completo ZIP</b> (dati strutturati + PDF), senza costi aggiuntivi.</p>
+<p>9.2 Alla cessazione del contratto i Dati del Cliente restano congelati e recuperabili per <b>60 giorni</b> (con promemoria via email al Titolare). Trascorso tale termine, il Responsabile <b>cancella definitivamente</b> i Dati del Cliente, salvo obblighi legali di conservazione a carico del Responsabile. Le copie presenti nei backup vengono eliminate con la normale rotazione dei backup entro <mark>[indicare periodo massimo]</mark>.</p>
+<p>9.3 Gli obblighi legali di conservazione dei documenti commerciali del Titolare (in particolare art. 958f CO, 10 anni per le fatture) restano di esclusiva responsabilità del Titolare, che deve esportare i documenti prima della cancellazione.</p>
+<h2 id="10-responsabilit-e-disposizioni-finali">10. Responsabilità e disposizioni finali</h2>
+<p>10.1 Per la responsabilità delle parti si applicano le limitazioni previste dalle Condizioni d&#x27;uso, nella misura ammessa dalla legge.</p>
+<p>10.2 In caso di conflitto tra il presente DPA e le Condizioni d&#x27;uso, per i temi di protezione dei dati prevale il DPA.</p>
+<p>10.3 Il presente DPA è retto dal <b>diritto svizzero</b>. Foro esclusivo è <b>Bellinzona (Ticino, Svizzera)</b>, salvo fori imperativi di legge.</p>
+<h2 id="allegato-a-dettagli-del-trattamento">Allegato A: dettagli del trattamento</h2>
+<div class="tw"><table><tbody>
+<tr><td>Elemento</td><td>Descrizione</td></tr>
+<tr><td>Oggetto</td><td>Erogazione del gestionale SaaS Vamio (offerte, fatture QR-Bill, richiami, archivio, email, funzioni AI opzionali)</td></tr>
+<tr><td>Durata</td><td>Durata del contratto di servizio + 60 giorni di conservazione post-cessazione</td></tr>
+<tr><td>Natura del trattamento</td><td>Memorizzazione, organizzazione, consultazione, elaborazione, generazione PDF, trasmissione email per conto del Titolare, backup, cancellazione</td></tr>
+<tr><td>Finalità</td><td>Gestione documentale e amministrativa del Titolare tramite il Servizio</td></tr>
+<tr><td>Persone interessate</td><td>Clienti finali del Titolare e loro referenti, contatti commerciali, collaboratori del Titolare</td></tr>
+<tr><td>Categorie di dati</td><td>Identificativi e di contatto, dati contrattuali e commerciali, dati di fatturazione, corrispondenza generata dal Servizio</td></tr>
+<tr><td>Dati degni di particolare protezione</td><td>Non previsti dal Servizio (eventuale inserimento sotto responsabilità del Titolare)</td></tr>
+<tr><td>Localizzazione</td><td>Svizzera (Infomaniak); eccezione Funzioni AI, si veda art. 6</td></tr>
+</tbody></table></div>
+<h2 id="allegato-b-misure-tecniche-e-organizzati">Allegato B: misure tecniche e organizzative (TOM)</h2>
+<div class="nota"><mark>[Elenco da consolidare a sviluppo completato; base prevista dal design del prodotto. Da rivedere con il legale e aggiornare periodicamente.]</mark></div>
+<p><b>Misure tecniche previste:</b></p>
+<ul class="p">
+<li>Isolamento dei dati per cliente imposto a livello di database (PostgreSQL con Row-Level Security su ogni tabella)</li>
+<li>Identificativo del tenant derivato esclusivamente dalla sessione autenticata, mai da parametri manipolabili dall&#x27;utente</li>
+<li>File e documenti archiviati in aree separate per cliente</li>
+<li>Cifratura del traffico in transito (TLS/HTTPS)</li>
+<li><mark>[Cifratura a riposo: indicare soluzione, es. cifratura dischi dell&#x27;hosting]</mark></li>
+<li>Autenticazione con verifica email, password con requisiti minimi, 2FA facoltativa</li>
+<li>Protezione anti-bot alla registrazione e limiti di frequenza (rate limiting) sulle interfacce esposte</li>
+<li>Registro delle attività (audit log) sulle operazioni rilevanti</li>
+<li>Backup regolari <mark>[frequenza e conservazione da indicare]</mark>, con test periodici di ripristino</li>
+<li>Ambienti di sviluppo e collaudo separati dalla produzione, non esposti a internet</li>
+<li>Aggiornamenti di sicurezza regolari dei sistemi</li>
+</ul>
+<p><b>Misure organizzative previste:</b></p>
+<ul class="p">
+<li>Accesso ai sistemi di produzione limitato alle persone strettamente necessarie, con autenticazione a chiave</li>
+<li>Obblighi di riservatezza per le persone autorizzate</li>
+<li>Gestione documentata degli incidenti di sicurezza e procedure di notifica</li>
+<li>Rotazione periodica dei segreti tecnici (credenziali, chiavi)</li>
+<li>Principio della minimizzazione: nessun uso dei dati dei clienti per finalità proprie</li>
+</ul>
+<h2 id="allegato-c-sub-responsabili-autorizzati">Allegato C: sub-responsabili autorizzati</h2>
+<div class="nota"><mark>[Elenco da confermare prima del lancio; verificare con il legale sedi, contratti e garanzie di trasferimento per ciascun fornitore.]</mark></div>
+<div class="tw"><table><tbody>
+<tr><td>Sub-responsabile</td><td>Sede</td><td>Funzione</td><td>Localizzazione dati</td><td>Note</td></tr>
+<tr><td>Infomaniak Network SA</td><td>Ginevra, Svizzera</td><td>Hosting dell&#x27;infrastruttura e dei dati</td><td>Svizzera</td><td>Fornitore principale, dati sempre in CH</td></tr>
+<tr><td><mark>[Fornitore AI: attualmente Google, servizio Gemini, entità da specificare]</mark></td><td><mark>[da verificare]</mark></td><td>Elaborazione delle richieste delle Funzioni AI</td><td>Anche fuori Svizzera</td><td>Attivo SOLO se il Titolare usa le Funzioni AI; disattivabile; garanzie art. 16 LPD da documentare</td></tr>
+<tr><td><mark>[Eventuale servizio di recapito email, se diverso dall&#x27;infrastruttura propria]</mark></td><td><mark>[da definire]</mark></td><td>Invio email per conto del Titolare</td><td><mark>[da definire]</mark></td><td>Solo se adottato</td></tr>
+</tbody></table></div>
+<p>Nota: Stripe (pagamenti degli abbonamenti) e Cloudflare (protezione anti-bot alla registrazione) trattano dati del Cliente in qualità di fornitori del Responsabile nel rapporto contrattuale diretto con il Cliente; tali trattamenti sono descritti nell&#x27;informativa privacy e non riguardano i dati dei clienti finali del Titolare. <mark>[Da far confermare al legale.]</mark></p>
+<p><b>VAM Deco Sagl</b>, <mark>[indirizzo]</mark>, 6514 Sementina, Svizzera</p>
+<p>Contatto: <mark>[email di contatto, es. privacy@vamio.ch]</mark></p>
+<p>*Documento accettato elettronicamente in fase di registrazione insieme alle Condizioni d&#x27;uso. Versione scaricabile in PDF dall&#x27;app.*</p></article></main>
+<footer><div class="f-in"><div><b>Vamio</b> è un prodotto di VAM Deco Sagl · Via Pobbia 4d, 6514 Sementina, Svizzera<br>amministrazione@vamdeco.ch · +41 76 588 94 97</div>
+<div><a href="condizioni.html">Condizioni d'uso</a> · <a href="privacy.html">Protezione dei dati</a> · <a href="dpa.html">Trattamento dei dati su mandato</a> · <a href="cookie.html">Cookie</a></div></div></footer>
+</body></html>
