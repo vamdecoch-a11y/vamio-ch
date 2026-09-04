@@ -323,6 +323,7 @@ footer{background:var(--ink);color:#A6A3B5;padding:56px 0 40px}
 
 
 /* banner cookie */
+#cookiebar[hidden]{display:none}
 #cookiebar{position:fixed;left:16px;right:16px;bottom:16px;z-index:120;background:var(--ink);color:#EEEBF2;border-radius:16px;padding:18px 22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;box-shadow:0 24px 60px -24px rgba(38,43,68,.55);max-width:980px;margin:0 auto}
 #cookiebar p{font-size:14px;line-height:1.5;flex:1;min-width:260px;margin:0;color:#C3C6D6}
 #cookiebar b{color:#fff}
@@ -697,7 +698,8 @@ footer{background:var(--ink);color:#A6A3B5;padding:56px 0 40px}
   bar.addEventListener('click', function(e){
     var b=e.target.closest('button[data-c]'); if(!b) return;
     try{localStorage.setItem(K, b.dataset.c)}catch(e){}
-    bar.hidden=true;
+    bar.hidden=true; bar.style.display='none';
+    setTimeout(function(){ if(bar.parentNode) bar.parentNode.removeChild(bar); }, 50);
     // se accettate: qui si attiva lo strumento di statistica scelto (nessuno attivo per ora)
   });
 })();
