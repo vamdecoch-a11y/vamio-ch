@@ -1,0 +1,18 @@
+{
+  "name": "Vamio, offerte e fatture",
+  "short_name": "Vamio",
+  "description": "Il gestionale svizzero di offerte e fatture QR-Bill con assistente AI.",
+  "lang": "it-CH",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F6F1EA",
+  "theme_color": "#3D4461",
+  "icons": [
+    { "src": "/web-assets/favicon-48.png", "sizes": "48x48", "type": "image/png" },
+    { "src": "/web-assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/web-assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/web-assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

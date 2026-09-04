@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Vamio">
+  <rect width="64" height="64" rx="14" fill="#3D4461"/>
+  <polygon points="9,8.5 27,28 7,32" fill="#DD4F03"/>
+  <polygon points="55,8.5 37,28 57,32" fill="#DD4F03"/>
+  <polygon points="9,8.5 17.5,17.7 8.2,19.5" fill="#161A2C"/>
+  <polygon points="55,8.5 46.5,17.7 55.8,19.5" fill="#161A2C"/>
+  <path d="M7 28 Q32 15.5 57 28 L49.5 45 Q32 59.5 14.5 45 Z" fill="#DD4F03"/>
+  <path d="M20.5 35.5 Q32 45.5 43.5 35.5 Q42.5 47.5 32 52 Q21.5 47.5 20.5 35.5 Z" fill="#FFF3E8"/>
+  <circle cx="22.3" cy="33.6" r="3.7" fill="#20243A"/>
+  <circle cx="41.7" cy="33.6" r="3.7" fill="#20243A"/>
+  <circle cx="23.6" cy="32.3" r="1.2" fill="#fff"/>
+  <circle cx="43" cy="32.3" r="1.2" fill="#fff"/>
+  <ellipse cx="32" cy="43.4" rx="3.3" ry="2.8" fill="#20243A"/>
+</svg>
