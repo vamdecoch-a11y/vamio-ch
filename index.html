@@ -693,8 +693,8 @@ footer{background:var(--ink);color:#A6A3B5;padding:56px 0 40px}
 </script>
 
 <div id="cookiebar" hidden>
-  <p><b>Usiamo solo i cookie necessari.</b> Con il tuo consenso aggiungiamo una statistica anonima delle visite, per capire quali pagine funzionano. Nessuna pubblicità, nessun tracciamento tra siti. <a href="legale/privacy.html#11-cookie-e-tecnologie-simili">Dettagli</a></p>
-  <div class="acts"><button class="no" data-c="no">Solo necessari</button><button class="ok" data-c="ok">Accetto le statistiche</button></div>
+  <p><b>Solo cookie tecnici.</b> Servono a far funzionare il sito e l'accesso all'applicazione. Nessuna statistica, nessuna pubblicità, nessun tracciamento tra siti: non c'è niente da accettare. <a href="legale/privacy.html#11-cookie-e-tecnologie-simili">Dettagli</a></p>
+  <div class="acts"><button class="ok" data-c="visto">Ho capito</button></div>
 </div>
 <script>
 (function(){
@@ -706,7 +706,6 @@ footer{background:var(--ink);color:#A6A3B5;padding:56px 0 40px}
     try{localStorage.setItem(K, b.dataset.c)}catch(e){}
     bar.hidden=true; bar.style.display='none';
     setTimeout(function(){ if(bar.parentNode) bar.parentNode.removeChild(bar); }, 50);
-    // se accettate: qui si attiva lo strumento di statistica scelto (nessuno attivo per ora)
   });
 })();
 </script>
