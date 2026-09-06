@@ -1,58 +1,143 @@
 <!DOCTYPE html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vamio · Protezione dei dati</title>
-<link rel="icon" href="/web-assets/favicon.ico" sizes="32x32"><link rel="icon" type="image/svg+xml" href="/web-assets/vamio-volpe-icona.svg"><link rel="apple-touch-icon" sizes="180x180" href="/web-assets/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vamio, informativa sulla protezione dei dati</title>
+<meta name="description" content="Quali dati trattiamo, perché, dove sono conservati, a chi li comunichiamo, per quanto tempo e quali diritti ha Lei.">
+<link rel="icon" href="/web-assets/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/web-assets/vamio-volpe-icona.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/web-assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/web-assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#3D4461">
 <link rel="stylesheet" href="../web-assets/fonts.css">
+<link rel="canonical" href="https://vamio.ch/legale/privacy.html">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--ink:#262B44;--ink-2:#6E6779;--paper:#F6F1EA;--card:#FDFBF8;--line:#E6DED3;--blu:#3D4461;--or:#DD4F03;--cta:#D64A03;--tint:#FDEBDD}
-body{font-family:'Figtree',sans-serif;background:var(--paper);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
-a{color:var(--or)}
-h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.08}
-.nav{position:sticky;top:0;z-index:20;background:rgba(246,241,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:inset 0 -2px 0 var(--or)}
-.nav-in{max-width:1060px;margin:0 auto;padding:0 24px;height:66px;display:flex;align-items:center;gap:26px}
-.nav-in svg{height:24px;width:auto;display:block}
-.nav-in a{font-weight:600;font-size:14.5px;color:var(--ink-2);text-decoration:none}
-.nav-in a:hover,.nav-in a.on{color:var(--ink)}
-.nav-in .grow{flex:1}
-.nav-in .back{font-weight:700;color:var(--or)}
-header.h{max-width:1060px;margin:0 auto;padding:52px 24px 26px}
-header.h .eyebrow{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);display:flex;align-items:center;gap:10px}
-header.h .eyebrow::before{content:"";width:26px;height:2px;background:var(--or)}
-header.h h1{font-size:clamp(30px,4.4vw,44px);margin:12px 0 10px}
-header.h p{color:var(--ink-2);font-size:17px;max-width:62ch}
-.warn{max-width:1060px;margin:22px auto 0;padding:0 24px}
-.warn div{background:var(--tint);border:1px solid #F3C9AE;border-radius:12px;padding:16px 20px;font-size:14.5px}
-.warn b{color:var(--cta)}
-main{max-width:1060px;margin:0 auto;padding:30px 24px 70px;display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
-@media(max-width:860px){main{grid-template-columns:1fr}nav.toc{position:static!important}}
-nav.toc{position:sticky;top:90px;font-size:13.5px}
-nav.toc .lbl{font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
-nav.toc a{display:block;padding:5px 0 5px 12px;border-left:2px solid var(--line);color:var(--ink-2);text-decoration:none}
-nav.toc a:hover{border-left-color:var(--or);color:var(--ink)}
-article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 38px}
-article h2{font-size:22px;margin:30px 0 10px;padding-top:6px}
+:root{
+  --ink:#262B44; --ink-2:#6E6779; --paper:#F6F1EA; --card:#FDFBF8; --line:#E6DED3;
+  --blu:#3D4461; --or:#DD4F03; --cta:#D64A03; --tint:#FDEBDD; --tint-line:#F3C9AE;
+}
+html{scroll-behavior:smooth}
+body{font-family:"Figtree","Helvetica Neue",Arial,sans-serif;background:var(--paper);color:var(--ink);
+  line-height:1.62;-webkit-font-smoothing:antialiased;font-size:16px}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque","Figtree",Arial,sans-serif;font-weight:800;
+  letter-spacing:-.02em;line-height:1.1}
+a{color:var(--cta)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+
+.nav{position:sticky;top:0;z-index:20;background:rgba(246,241,234,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);box-shadow:inset 0 -2px 0 var(--or)}
+.nav-in{max-width:1020px;margin:0 auto;padding:0 24px;min-height:64px;display:flex;align-items:center;
+  gap:8px 22px;flex-wrap:wrap}
+.nav-in .brand{display:flex;align-items:center;padding:12px 0}
+.nav-in .brand svg{height:24px;width:auto;display:block}
+.nav-in a{font-weight:600;font-size:14.5px;color:var(--ink-2);text-decoration:none;padding:6px 0}
+.nav-in a:hover{color:var(--ink)}
+.nav-in a.torna{margin-left:auto;color:var(--cta);font-weight:700}
+.nav-in a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--or)}
+
+header.top{padding:52px 0 8px}
+.eyebrow{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);
+  display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--or)}
+header.top h1{font-size:clamp(30px,4.4vw,44px);margin:14px 0 12px;max-width:20ch}
+header.top .sub{color:var(--ink-2);font-size:17px;max-width:64ch}
+.versione{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--tint);
+  border:1px solid var(--tint-line);border-left:5px solid var(--or);border-radius:12px;
+  padding:14px 20px;margin:26px 0 4px;font-size:15px}
+.versione .tag{font-weight:800;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:#fff;background:var(--cta);border-radius:999px;padding:5px 12px;white-space:nowrap}
+.versione b{color:#8A3400}
+
+main{padding:26px 0 64px}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px;margin-bottom:30px}
+.toc .lbl{font-weight:700;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-2);
+  margin-bottom:14px}
+.toc ol{list-style:none;columns:2;column-gap:34px}
+.toc li{break-inside:avoid;margin-bottom:2px}
+.toc a{display:block;padding:5px 0 5px 12px;border-left:2px solid var(--line);color:var(--ink-2);
+  text-decoration:none;font-size:14px}
+.toc a:hover{border-left-color:var(--or);color:var(--ink)}
+@media(max-width:720px){.toc ol{columns:1}}
+
+article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 40px 40px}
+article p,article ul,article ol,article h2,article h3,article h4,article .nota{max-width:72ch}
+article h2{font-size:23px;margin:38px 0 12px;scroll-margin-top:88px}
 article h2:first-child{margin-top:0}
-article h3{font-size:17px;margin:20px 0 8px}
-article h4{font-size:15px;margin:16px 0 6px}
-article p{margin-bottom:11px;font-size:15px}
-ul.p{list-style:none;margin:6px 0 14px}
-ul.p li{padding:6px 0 6px 24px;position:relative;font-size:15px}
-ul.p li::before{content:"";position:absolute;left:3px;top:14px;width:10px;height:6px;border-left:2.2px solid var(--or);border-bottom:2.2px solid var(--or);transform:rotate(-45deg)}
-.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:14px 0}
-table{width:100%;border-collapse:collapse;font-size:14px;background:#fff}
-td{padding:10px 14px;border-bottom:1px solid #EFE9E1;vertical-align:top}
+article h3{font-size:17.5px;margin:26px 0 8px;scroll-margin-top:88px}
+article h4{font-size:15.5px;margin:20px 0 6px}
+article p{margin-bottom:12px;font-size:15.5px}
+article hr{border:none;border-top:1px solid var(--line);margin:30px 0;max-width:none}
+article strong{font-weight:700}
+code{font-family:"Figtree",Arial,sans-serif;font-weight:600;background:#EFE9E1;padding:1px 6px;
+  border-radius:4px;font-size:.92em}
+
+ul.p{list-style:none;margin:8px 0 16px}
+ul.p li{padding:6px 0 6px 26px;position:relative;font-size:15.5px}
+ul.p li::before{content:"";position:absolute;left:3px;top:15px;width:10px;height:6px;
+  border-left:2.2px solid var(--or);border-bottom:2.2px solid var(--or);transform:rotate(-45deg)}
+ol.n{margin:8px 0 16px;padding-left:26px}
+ol.n li{padding:5px 0 5px 4px;font-size:15.5px}
+ol.n li::marker{color:var(--or);font-weight:700}
+
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:18px 0 22px;
+  max-width:100%;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:14px;background:#fff;min-width:520px}
+th,td{padding:11px 14px;border-bottom:1px solid #EFE9E1;vertical-align:top;text-align:left}
+th{font-weight:700;background:#FAF6F0;font-size:13.5px}
+table.kv th{width:26%;min-width:150px;font-size:14px;color:var(--ink)}
+table.kv td{font-size:14px}
 tr:last-child td{border-bottom:none}
-tr:first-child td{font-weight:700;background:#FAF6F0}
-code{font-weight:600;background:#EFE9E1;padding:1px 6px;border-radius:4px;font-size:.92em}
-mark{background:#FFE9D2;color:#8A3400;padding:1px 5px;border-radius:4px;font-weight:600}
-.nota{background:var(--tint);border:1px solid #F3C9AE;border-radius:10px;padding:12px 16px;font-size:14px;margin:12px 0}
-footer{background:var(--blu);color:#A6A3B5;padding:34px 0 44px;font-size:13px}
-.f-in{max-width:1060px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-footer a{color:#D9D7E2;text-decoration:none}
-footer b{color:#fff}
-</style></head><body>
-<nav class="nav"><div class="nav-in"><a href="../" aria-label="Vamio"><svg style="height:24px;width:auto" xmlns="http://www.w3.org/2000/svg" viewBox="-60 -800 4704 880" role="img" aria-label="Vamio">
+
+.nota{background:var(--tint);border:1px solid var(--tint-line);border-radius:12px;
+  padding:16px 20px 6px;margin:18px 0 22px}
+.nota p{font-size:15px}
+.nota ul.p{margin-bottom:12px}
+.nota hr{display:none}
+
+footer{background:var(--blu);color:#B4B1C2;padding:40px 0 52px;font-size:13.5px}
+footer .cols{display:grid;grid-template-columns:1.3fr 1fr;gap:34px}
+@media(max-width:720px){footer .cols{grid-template-columns:1fr}}
+footer b{color:#fff;font-weight:700}
+footer .lbl{font-weight:700;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:#8E8AA0;margin-bottom:12px}
+footer a{color:#E4E2EA;text-decoration:none;display:block;padding:4px 0}
+footer a:hover{color:#fff;text-decoration:underline}
+footer .fine{margin-top:28px;padding-top:18px;border-top:1px solid #4C5271;color:#8E8AA0;font-size:12.5px}
+
+@media print{
+  @page{margin:16mm 14mm}
+  body{background:#fff;font-size:10.5pt;line-height:1.5}
+  .nav,.toc{display:none}
+  .wrap{max-width:none;padding:0}
+  header.top{padding:0 0 6px}
+  header.top h1{font-size:22pt}
+  article{background:#fff;border:none;border-radius:0;padding:0}
+  article p,article ul,article ol,article h2,article h3,article h4,article .nota{max-width:none}
+  article h2{font-size:14pt;margin:18pt 0 6pt;break-after:avoid}
+  article h3{font-size:11.5pt;break-after:avoid}
+  article p,article li{font-size:10.5pt}
+  .versione{background:#fff;border:1px solid #999;border-left:3pt solid #999}
+  .versione .tag{background:#fff;color:#000;border:1px solid #999}
+  .nota{background:#fff;border:1px solid #BBB}
+  .tw{overflow:visible;border:1px solid #BBB}
+  table{font-size:9pt;min-width:0}
+  th{background:#F2F2F2}
+  tr{break-inside:avoid}
+  .nota,.tw{break-inside:auto}
+  footer{background:#fff;color:#333;border-top:1px solid #BBB;padding:12pt 0 0}
+  footer b{color:#000}
+  footer a{color:#333}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Documenti legali Vamio">
+  <div class="nav-in">
+    <a class="brand" href="../" aria-label="Vamio, torna al sito"><svg style="height:24px;width:auto" xmlns="http://www.w3.org/2000/svg" viewBox="-60 -800 4704 880" role="img" aria-label="Vamio">
   <g transform="translate(0 -720.0) scale(1.42578125)">
     <rect width="512" height="512" rx="118" fill="#3D4461"/>
     <path d="M118 250 L225 380 L394 148" fill="none" stroke="#DD4F03" stroke-width="66" stroke-linecap="square" stroke-linejoin="miter"/>
@@ -61,106 +146,186 @@ footer b{color:#fff}
     <path fill="#3D4461" d="M254.7825927734375 0.0 3.9129638671875 -527.2174072265625H173.566650390625L283.6966552734375 -278.391845703125Q290.479248046875 -263.391845703125 299.93572998046875 -239.82666015625Q309.3922119140625 -216.261474609375 319.34869384765625 -191.9136962890625Q329.30517578125 -167.56591796875 336.6529541015625 -148.2181396484375H345.0877685546875Q352.6529541015625 -167.7833251953125 361.82684326171875 -192.23980712890625Q371.000732421875 -216.6962890625 380.2833251953125 -240.261474609375Q389.56591796875 -263.82666015625 396.3485107421875 -278.82666015625L505.60888671875 -527.2174072265625H670.175537109375L419.305908203125 0.0Z M944.0 12Q896.13037109375 12.0 854.8694458007812 4.60870361328125Q813.6085205078125 -2.7825927734375 782.6737060546875 -20.2825927734375Q751.7388916015625 -37.7825927734375 734.521484375 -67.89129638671875Q717.3040771484375 -98.0 717.3040771484375 -143.6522216796875Q717.3040771484375 -207.434814453125 751.9779663085938 -243.54351806640625Q786.65185546875 -279.6522216796875 850.217041015625 -295.97833251953125Q913.7822265625 -312.304443359375 999.2822265625 -316.5218505859375Q1084.7822265625 -320.7392578125 1185.8692626953125 -320.7392578125V-340.3477783203125Q1185.8692626953125 -372.825927734375 1169.9127807617188 -392.06500244140625Q1153.956298828125 -411.3040771484375 1121.4129638671875 -419.586669921875Q1088.86962890625 -427.8692626953125 1037.4351806640625 -427.8692626953125Q997.6529541015625 -427.8692626953125 965.3922119140625 -422.41278076171875Q933.1314697265625 -416.956298828125 914.1314697265625 -405.49981689453125Q895.1314697265625 -394.0433349609375 895.1314697265625 -375.825927734375V-365.565185546875H737.5648193359375Q736.5648193359375 -369.565185546875 736.1735229492188 -373.23907470703125Q735.7822265625 -376.9129638671875 735.7822265625 -381.695556640625Q735.7822265625 -428.695556640625 770.9779663085938 -464.13037109375Q806.1737060546875 -499.565185546875 875.565185546875 -519.3912963867188Q944.9566650390625 -539.2174072265625 1048.0003662109375 -539.2174072265625Q1143.6092529296875 -539.2174072265625 1209.2833251953125 -522.1087036132812Q1274.9573974609375 -505.0 1308.7618408203125 -466.2174072265625Q1342.5662841796875 -427.434814453125 1342.5662841796875 -361.86962890625V-141.391845703125Q1342.5662841796875 -123.0440673828125 1350.1749877929688 -112.71795654296875Q1357.78369140625 -102.391845703125 1376.1314697265625 -102.391845703125H1428.0010986328125V-5.6522216796875Q1416.2618408203125 -1.0 1388.0225830078125 5.5Q1359.7833251953125 12.0 1326.4788818359375 12.0Q1280.3048095703125 12.0 1253.7394409179688 1.32611083984375Q1227.174072265625 -9.3477783203125 1215.0435180664062 -27.695556640625Q1202.9129638671875 -46.0433349609375 1198.0433349609375 -68.1737060546875H1190.0433349609375Q1161.825927734375 -43.2607421875 1123.5868530273438 -24.9129638671875Q1085.3477783203125 -6.565185546875 1040.0 2.7174072265625Q994.6522216796875 12.0 944.0 12ZM985.1744384765625 -99.1307373046875Q1013.478515625 -99.1307373046875 1047.6957397460938 -105.36981201171875Q1081.9129638671875 -111.60888671875 1113.7172241210938 -124.13055419921875Q1145.521484375 -136.6522216796875 1165.6953735351562 -155.95648193359375Q1185.8692626953125 -175.2607421875 1185.8692626953125 -201.6085205078125V-229.9129638671875Q1079.304443359375 -229.9129638671875 1009.9351806640625 -222.195556640625Q940.56591796875 -214.4781494140625 906.9573974609375 -197.13037109375Q873.348876953125 -179.7825927734375 873.348876953125 -149.3914794921875Q873.348876953125 -128.043701171875 889.7618408203125 -117.36981201171875Q906.1748046875 -106.6959228515625 932.0442504882812 -102.913330078125Q957.9136962890625 -99.1307373046875 985.1744384765625 -99.1307373046875Z M1496.6085205078125 0.0V-527.2174072265625H1623.04443359375L1634.1314697265625 -438.0870361328125H1643.1314697265625Q1670.6966552734375 -476.2174072265625 1706.479248046875 -498.10870361328125Q1742.2618408203125 -520.0 1782.7618408203125 -529.6087036132812Q1823.2618408203125 -539.2174072265625 1861.9140625 -539.2174072265625Q1936.1314697265625 -539.2174072265625 1985.348876953125 -514.6087036132812Q2034.5662841796875 -490.0 2057.4359130859375 -438.0870361328125H2066.6533203125Q2095.0010986328125 -476.2174072265625 2131.1749877929688 -498.10870361328125Q2167.348876953125 -520.0 2207.848876953125 -529.6087036132812Q2248.348876953125 -539.2174072265625 2287.78369140625 -539.2174072265625Q2359.3055419921875 -539.2174072265625 2407.457763671875 -515.6738891601562Q2455.6099853515625 -492.13037109375 2479.9360961914062 -444.2607421875Q2504.26220703125 -396.39111328125 2504.26220703125 -322.956298828125V0.0H2347.565185546875V-298.3040771484375Q2347.565185546875 -329.477783203125 2339.3261108398438 -351.8907470703125Q2331.0870361328125 -374.3037109375 2315.7827758789062 -388.0863037109375Q2300.478515625 -401.868896484375 2278.6742553710938 -408.19500732421875Q2256.8699951171875 -414.5211181640625 2229.95703125 -414.5211181640625Q2189.9136962890625 -414.5211181640625 2155.30517578125 -397.28204345703125Q2120.6966552734375 -380.04296875 2099.5446166992188 -349.45611572265625Q2078.392578125 -318.8692626953125 2078.392578125 -278.0433349609375V0.0H1922.4781494140625V-298.3040771484375Q1922.4781494140625 -329.477783203125 1914.2390747070312 -351.8907470703125Q1906.0 -374.3037109375 1890.6957397460938 -388.0863037109375Q1875.3914794921875 -401.868896484375 1853.5872192382812 -408.19500732421875Q1831.782958984375 -414.5211181640625 1804.08740234375 -414.5211181640625Q1764.0440673828125 -414.5211181640625 1729.435546875 -397.28204345703125Q1694.8270263671875 -380.04296875 1674.0662841796875 -349.45611572265625Q1653.3055419921875 -318.8692626953125 1653.3055419921875 -278.0433349609375V0.0Z M2638.6085205078125 0.0V-527.2174072265625H2795.3055419921875V0.0Z M3243.95703125 12.0Q3141.2177734375 12.0 3066.4349975585938 -18.89129638671875Q2991.6522216796875 -49.7825927734375 2951.3042602539062 -111.17388916015625Q2910.956298828125 -172.565185546875 2910.956298828125 -264.0Q2910.956298828125 -356.2174072265625 2951.3042602539062 -417.32611083984375Q2991.6522216796875 -478.434814453125 3066.4349975585938 -508.82611083984375Q3141.2177734375 -539.2174072265625 3243.95703125 -539.2174072265625Q3346.6962890625 -539.2174072265625 3421.4790649414062 -508.82611083984375Q3496.2618408203125 -478.434814453125 3536.6098022460938 -417.32611083984375Q3576.957763671875 -356.2174072265625 3576.957763671875 -264.0Q3576.957763671875 -172.565185546875 3536.6098022460938 -111.17388916015625Q3496.2618408203125 -49.7825927734375 3421.4790649414062 -18.89129638671875Q3346.6962890625 12.0 3243.95703125 12.0ZM3243.95703125 -102.391845703125Q3298.4351806640625 -102.391845703125 3336.7611083984375 -120.56573486328125Q3375.0870361328125 -138.7396240234375 3394.9564819335938 -172.7177734375Q3414.825927734375 -206.6959228515625 3414.825927734375 -254.0V-274.0Q3414.825927734375 -322.086669921875 3394.9564819335938 -355.67352294921875Q3375.0870361328125 -389.2603759765625 3336.7611083984375 -407.04296875Q3298.4351806640625 -424.8255615234375 3243.95703125 -424.8255615234375Q3189.4788818359375 -424.8255615234375 3151.1529541015625 -407.04296875Q3112.8270263671875 -389.2603759765625 3092.9575805664062 -355.67352294921875Q3073.088134765625 -322.086669921875 3073.088134765625 -274.0V-254.0Q3073.088134765625 -206.6959228515625 3092.9575805664062 -172.7177734375Q3112.8270263671875 -138.7396240234375 3151.1529541015625 -120.56573486328125Q3189.4788818359375 -102.391845703125 3243.95703125 -102.391845703125Z"/>
     <rect fill="#DD4F03" x="2622" y="-740" width="190" height="190"/>
   </g>
-</svg>
-</a><a href="condizioni.html" class="">Condizioni d'uso</a><a href="privacy.html" class="on">Protezione dei dati</a><a href="dpa.html" class="">Trattamento dei dati su mandato</a><a href="cookie.html" class="">Cookie</a><span class="grow"></span><a class="back" href="../">Torna al sito</a></div></nav>
-<header class="h"><div class="eyebrow">Documenti legali</div><h1>Protezione dei dati</h1><p>Quali dati trattiamo, dove stanno, per quanto tempo e quali diritti hai.</p></header>
+</svg></a>
+    <a href="condizioni.html">Condizioni generali d'uso</a><a href="privacy.html" class="on">Protezione dei dati</a><a href="dpa.html">Trattamento dei dati (DPA)</a><a href="prova.html">Prova gratuita 30 giorni</a><a href="../" class="torna">Torna al sito</a>
+  </div>
+</nav>
 
-<main><nav class="toc"><div class="lbl">In questa pagina</div><a href="#1-chi-siamo">1. Chi siamo</a><a href="#2-i-due-ruoli-di-vamio-una-distinzione-i">2. I due ruoli di Vamio: una distinzione importante</a><a href="#3-quali-dati-trattiamo-e-per-quali-scopi">3. Quali dati trattiamo e per quali scopi</a><a href="#4-dove-sono-conservati-i-dati">4. Dove sono conservati i dati</a><a href="#5-a-chi-comunichiamo-i-dati">5. A chi comunichiamo i dati</a><a href="#6-per-quanto-tempo-conserviamo-i-dati">6. Per quanto tempo conserviamo i dati</a><a href="#7-export-dei-dati-portabilit">7. Export dei dati (portabilità)</a><a href="#8-sicurezza">8. Sicurezza</a><a href="#9-i-suoi-diritti">9. I Suoi diritti</a><a href="#10-cookie-e-tecnologie-simili">10. Cookie e tecnologie simili</a><a href="#11-modifiche-della-presente-informativa">11. Modifiche della presente informativa</a><a href="#12-contatto">12. Contatto</a></nav><article><p>Versione: bozza 0.1 del 27.08.2026</p>
-<h2 id="1-chi-siamo">1. Chi siamo</h2>
-<p>Il servizio Vamio (app <code>app.vamio.ch</code> e sito <code>vamio.ch</code>) è fornito da:</p>
-<p><b>VAM Deco Sagl</b></p>
-<p><mark>[indirizzo completo]</mark>, 6514 Sementina, Svizzera</p>
-<p>IDI: <mark>[CHE-xxx.xxx.xxx]</mark></p>
-<p>Email di contatto per la protezione dei dati: <mark>[info@vamio.ch]</mark></p>
-<p>Trattiamo i dati personali nel rispetto della <b>Legge federale svizzera sulla protezione dei dati (LPD)</b> e della relativa ordinanza (OPDa). Se in singoli casi fosse applicabile il Regolamento europeo (GDPR), ne rispettiamo i requisiti per quanto pertinente.</p>
-<p>La presente informativa spiega quali dati personali trattiamo, per quali scopi e quali diritti Le spettano. Si rivolge ai visitatori del sito, alle persone che si registrano al Servizio e agli utenti dell&#x27;app.</p>
-<h2 id="2-i-due-ruoli-di-vamio-una-distinzione-i">2. I due ruoli di Vamio: una distinzione importante</h2>
-<p><b>a. Dati del Suo account (noi come titolare del trattamento).</b> Per i dati che riguardano Lei come nostro cliente o utente (registrazione, fatturazione, utilizzo del Servizio, assistenza) siamo noi a decidere scopi e mezzi del trattamento. Questa informativa descrive questi trattamenti.</p>
-<p><b>b. Dati che Lei inserisce nel gestionale (noi come responsabile del trattamento).</b> Per i dati dei Suoi clienti e contatti che Lei inserisce nel Servizio (anagrafiche, offerte, fatture), il titolare del trattamento è Lei (o la Sua azienda). Noi li trattiamo solo per Suo conto, secondo l&#x27;<b>Accordo sul trattamento dei dati (DPA)</b> che accetta alla registrazione. Per domande su quei dati, le persone interessate devono rivolgersi all&#x27;azienda che li ha inseriti.</p>
-<h2 id="3-quali-dati-trattiamo-e-per-quali-scopi">3. Quali dati trattiamo e per quali scopi</h2>
-<h3 id="3-1-registrazione-e-gestione-dell-accoun">3.1 Registrazione e gestione dell&#x27;account</h3>
-<ul class="p">
-<li>Dati: nome, ditta/ragione sociale, indirizzo email (verificato), password (memorizzata in forma cifrata non reversibile), numero di telefono <mark>[se richiesto]</mark>, impostazioni dell&#x27;account, ruolo utente (Titolare o Collaboratore).</li>
-<li>Scopi: creazione e gestione dell&#x27;account, autenticazione (inclusa 2FA facoltativa), comunicazioni di servizio, prevenzione degli abusi.</li>
-</ul>
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">Documenti legali</div>
+    <h1>Informativa sulla protezione dei dati del servizio Vamio</h1>
+    <p class="sub">Quali dati trattiamo, perché, dove sono conservati, a chi li comunichiamo, per quanto tempo e quali diritti ha Lei.</p>
+    <div class="versione"><span class="tag">Versione in vigore</span><span>Versione 1.0, in vigore dal 4 settembre 2026</span></div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="toc" aria-label="Indice dei contenuti"><div class="lbl">In questa pagina</div><ol><li><a href="#1-chi-siamo-e-come-contattarci">1. Chi siamo e come contattarci</a></li><li><a href="#2-a-chi-si-rivolge-questa-informativa-e-chi-decide-sui-dati">2. A chi si rivolge questa informativa e chi decide sui dati</a></li><li><a href="#3-quali-dati-trattiamo-e-perche">3. Quali dati trattiamo e perché</a></li><li><a href="#4-dove-sono-conservati-i-dati">4. Dove sono conservati i dati</a></li><li><a href="#5-a-chi-comunichiamo-i-dati">5. A chi comunichiamo i dati</a></li><li><a href="#6-per-quanto-tempo-conserviamo-i-dati">6. Per quanto tempo conserviamo i dati</a></li><li><a href="#7-esportare-i-suoi-dati">7. Esportare i Suoi dati</a></li><li><a href="#8-come-proteggiamo-i-dati-e-cosa-puo-fare-lei">8. Come proteggiamo i dati e cosa può fare Lei</a></li><li><a href="#9-profilazione-e-decisioni-automatizzate">9. Profilazione e decisioni automatizzate</a></li><li><a href="#10-i-suoi-diritti-e-come-esercitarli">10. I Suoi diritti e come esercitarli</a></li><li><a href="#11-cookie-e-tecnologie-simili">11. Cookie e tecnologie simili</a></li><li><a href="#12-evoluzione-del-servizio-versioni-modifiche-e-lingua">12. Evoluzione del Servizio, versioni, modifiche e lingua</a></li><li><a href="#identificazione-del-fornitore">Identificazione del fornitore</a></li></ol></nav>
+    <article>
+<div class="nota"><p><strong>In breve</strong> (riassunto di cortesia: in caso di dubbio fa fede il testo completo che segue)</p>
+<ul class="p"><li>Vamio è un servizio di VAM Deco Sagl, Via Pobbia 4d, 6514 Sementina. Per qualsiasi domanda sui Suoi dati: <a href="mailto:info@vamio.ch">info@vamio.ch</a>.</li><li>I dati del Suo account e tutto ciò che inserisce nel gestionale sono archiviati e trattati in Svizzera, presso Infomaniak (Ginevra), email comprese. Le copie di sicurezza sono cifrate e restano in Svizzera, sul server e su Swiss Backup Infomaniak.</li><li>Il traffico tra il Suo browser e Vamio passa dalla rete di protezione di Cloudflare, che blocca gli attacchi informatici. Per farlo Cloudflare legge il traffico per un istante su computer che possono trovarsi anche fuori dalla Svizzera, senza conservarne il contenuto in modo permanente.</li><li>Se attiva le Funzioni AI, il testo che chiede di elaborare viene inviato a Google (servizio Gemini) ed è trattato negli Stati Uniti d'America e in Irlanda, oltre agli altri Paesi in cui il gruppo Google dispone di strutture. Sono spente finché non le accende Lei e può spegnerle quando vuole.</li><li>Le uscite di dati dalla Svizzera sono quattro: il transito tecnico attraverso la rete di protezione di Cloudflare (dati in viaggio, non conservati), i pagamenti con carta tramite Stripe, l'assistente AI di Google (solo per le richieste che Lei gli rivolge, se attivato) e la consegna delle email ai server di posta dei destinatari che Lei sceglie (sezione 4).</li><li>Non vendiamo i Suoi dati, non li usiamo per pubblicità di terzi e non li usiamo per addestrare modelli di intelligenza artificiale.</li><li>I dati dei Suoi clienti che Lei inserisce in Vamio restano Suoi: noi li custodiamo solo per Suo conto, secondo l'Accordo sul trattamento dei dati (DPA).</li><li>Può scaricare tutto in un archivio ZIP quando vuole, gratis, senza chiedercelo.</li><li>Se disdice o non paga, i dati restano congelati per 60 giorni (con promemoria via email), poi li cancelliamo. Le fatture che ha emesso deve conservarle Lei per 10 anni.</li><li>I pagamenti con carta passano da Stripe: noi non vediamo mai il numero completo della carta.</li><li>Può sapere quali dati abbiamo su di Lei, farli correggere o cancellare: rispondiamo entro 30 giorni, gratuitamente.</li></ul></div>
+<hr>
+<h2 id="1-chi-siamo-e-come-contattarci">1. Chi siamo e come contattarci</h2>
+<p>Il servizio Vamio, che si usa dall'indirizzo app.vamio.ch e ha il proprio sito su vamio.ch, è fornito da:</p>
+<p><strong>VAM Deco Sagl</strong><br>Via Pobbia 4d, 6514 Sementina, Svizzera<br>Sede legale iscritta: Bellinzona, Cantone Ticino<br>IDI: CHE-207.714.834 (numero CH-ID: CH-501-4027717-7)<br>Iscritta nel registro di commercio del Cantone Ticino dal 3 gennaio 2023<br>Contatto per la protezione dei dati: <a href="mailto:info@vamio.ch">info@vamio.ch</a><br>Referente interno per la protezione dei dati: Michele Scacco, titolare, raggiungibile allo stesso indirizzo email o per posta all'indirizzo sopra indicato.</p>
+<p>Usiamo Vamio anche per la gestione della nostra azienda: conosciamo il Servizio da utenti, oltre che da fornitori.</p>
+<p>Trattiamo i dati personali nel rispetto della Legge federale sulla protezione dei dati del 25 settembre 2020 (LPD, RS 235.1) e dell'Ordinanza sulla protezione dei dati (OPDa, RS 235.11). Il Servizio è offerto esclusivamente a imprese e professionisti con sede in Svizzera e non è rivolto al mercato dell'Unione europea. Riteniamo quindi che il Regolamento (UE) 2016/679 (GDPR) non si applichi ai trattamenti che effettuiamo come titolare. Se nel caso concreto dovesse applicarsi, integriamo su richiesta l'Accordo sul trattamento dei dati con le clausole richieste dall'art. 28 GDPR. Se la Sua azienda tratta nel gestionale dati di persone che si trovano nell'Unione europea, l'eventuale applicazione del GDPR riguarda la Sua azienda in qualità di titolare.</p>
+<p>Questa informativa spiega quali dati personali trattiamo, perché, per quanto tempo e quali diritti ha Lei. La sezione 2 Le dice quale parte La riguarda. Le viene resa disponibile nella pagina di registrazione prima dell'invio del modulo, nell'email di invito se Lei viene aggiunto come utente da un'azienda cliente, e in ogni momento dal sito e dalle impostazioni dell'app.</p>
+<h2 id="2-a-chi-si-rivolge-questa-informativa-e-chi-decide-sui-dati">2. A chi si rivolge questa informativa e chi decide sui dati</h2>
+<p>Questa informativa riguarda tre situazioni. Trovi la Sua.</p>
+<p><strong>a. Lei ha registrato la Sua azienda su Vamio (Titolare dell'account) oppure visita il nostro sito.</strong> Per i dati che La riguardano (registrazione, abbonamento, uso dell'app, assistenza) decidiamo noi come e perché trattarli: siamo il "titolare del trattamento". Vale tutta questa informativa.</p>
+<p><strong>b. Lei è stato invitato da un'azienda che usa Vamio, come Collaboratore oppure come fiduciario con accesso in sola lettura.</strong> Il Titolare dell'account ci ha comunicato il Suo nome e il Suo indirizzo email per crearLe un accesso: come Collaboratore, con i permessi che ha configurato per Lei; come fiduciario, con la sola lettura dei dati e dei documenti dell'account, nei limiti previsti dalle impostazioni disponibili nel Servizio. Trattiamo questi dati e i dati tecnici del Suo utilizzo (sezione 3.3) per permetterLe di lavorare nel gestionale della Sua azienda, o di consultarlo, e per la sicurezza. Questa informativa Le viene mostrata nell'email di invito e al primo accesso. Per cambiare i Suoi permessi o togliere il Suo accesso deve rivolgersi al Titolare dell'account; per i Suoi diritti verso di noi vale la sezione 10.</p>
+<p><strong>c. Lei è cliente, fornitore o contatto di un'azienda che usa Vamio</strong> (per esempio ha ricevuto da quell'azienda un'offerta o una fattura). I Suoi dati sono stati inseriti da quell'azienda, che ne è il titolare e decide come usarli. Noi li custodiamo e li trattiamo solo per suo conto, secondo un contratto specifico (l'Accordo sul trattamento dei dati, DPA). Per accedere, correggere o cancellare quei dati si rivolga direttamente a quell'azienda; se scrive a noi, le trasmettiamo la richiesta entro 5 giorni lavorativi. Nella sezione 3.8 trova cosa facciamo con le email inviate per conto dei nostri clienti.</p>
+<p>Il Servizio non è concepito per dati personali degni di particolare protezione (per esempio dati sulla salute, su perseguimenti e sanzioni penali o amministrativi, su convinzioni religiose o politiche): le aziende che usano Vamio si impegnano nel DPA a non inserirne senza un motivo giustificativo valido e a non usare le Funzioni AI su documenti che ne contengono.</p>
+<p>In parole semplici: il "titolare del trattamento" è chi decide perché e come si usano i dati; il "responsabile del trattamento" è chi li tratta per conto di un altro, seguendo le sue istruzioni. Il "Titolare dell'account" è invece solo il nome del ruolo utente che amministra un account nell'app.</p>
+<h2 id="3-quali-dati-trattiamo-e-perche">3. Quali dati trattiamo e perché</h2>
+<h3 id="3-1-registrazione-e-gestione-dell-account">3.1 Registrazione e gestione dell'account</h3>
+<ul class="p"><li>Dati che La riguardano: nome e cognome, ragione sociale, indirizzo email (verificato con un link di conferma), password (conservata solo in forma non leggibile, nemmeno da noi), ruolo nell'account (Titolare dell'account, Collaboratore con i permessi configurati dal Titolare dell'account, oppure fiduciario con accesso in sola lettura), impostazioni personali. Il numero di telefono non è richiesto alla registrazione.</li><li>Dati della Sua azienda inseriti nelle impostazioni per generare i documenti: indirizzo, IDI e numero IVA, IBAN o QR-IBAN, logo, testi di intestazione e piè di pagina, indirizzo email di risposta usato per le email inviate dal Servizio.</li><li>Scopi: creare e gestire l'account, riconoscerLa quando accede (con la verifica in due passaggi tramite codice via email, obbligatoria per tutti gli utenti, alla quale può aggiungere facoltativamente un'app di autenticazione), generare i Suoi documenti con i dati corretti, inviarLe le comunicazioni necessarie al Servizio, prevenire abusi.</li><li>Se Lei è il Titolare dell'account e invita Collaboratori, ci comunica il loro nome e indirizzo email: si assicuri di averli informati. L'email di invito contiene il link a questa informativa.</li><li>Accesso del fiduciario: il Titolare dell'account può dare al proprio fiduciario un accesso in sola lettura, gratuito e non conteggiato fra gli utenti fatturati. Il fiduciario consulta in sola lettura i dati e i documenti dell'account, nei limiti previsti dalle impostazioni disponibili nel Servizio, e non può crearli, modificarli, inviarli o cancellarli. L'accesso nasce da un invito del Titolare dell'account, che ci comunica nome e indirizzo email del fiduciario, e può essere revocato in ogni momento dalle impostazioni. Anche per il fiduciario valgono la verifica in due passaggi e la registrazione delle operazioni della sezione 3.3.</li><li>Prova dell'accettazione: quando accetta le Condizioni d'uso e il DPA registriamo la versione dei documenti accettati, la data e l'ora, l'identificativo dell'account e dell'utente, e l'indirizzo IP usato. La prova dell'accettazione in senso stretto (versione, data e ora, identificativo dell'account e dell'utente) è conservata per la durata del contratto e per i 10 anni successivi, quale documento contrattuale, per analogia con il termine dell'art. 958f CO. L'indirizzo IP registrato al momento dell'accettazione è invece conservato soltanto 12 mesi, poi viene cancellato dalla registrazione, che resta valida come prova anche senza di esso.</li></ul>
 <h3 id="3-2-abbonamento-e-fatturazione">3.2 Abbonamento e fatturazione</h3>
-<ul class="p">
-<li>Dati: piano sottoscritto, dati di fatturazione, storico pagamenti. I dati della carta di pagamento sono trattati direttamente dal fornitore di pagamento <b>Stripe</b>; noi non memorizziamo il numero completo della carta.</li>
-<li>Scopi: gestione dell&#x27;abbonamento, incasso dei canoni, contabilità e obblighi legali.</li>
-</ul>
-<h3 id="3-3-utilizzo-del-servizio-e-sicurezza">3.3 Utilizzo del Servizio e sicurezza</h3>
-<ul class="p">
-<li>Dati: log tecnici (indirizzo IP, data e ora di accesso, operazioni rilevanti registrate nel registro attività), dati sul dispositivo e browser in forma tecnica.</li>
-<li>Scopi: funzionamento e sicurezza del Servizio, individuazione di abusi e accessi non autorizzati, diagnostica, adempimento del principio di tracciabilità.</li>
-<li>Conservazione dei log: <mark>[indicare durata, proposta 6-12 mesi]</mark>.</li>
-</ul>
-<h3 id="3-4-anti-abuso-alla-registrazione">3.4 Anti-abuso alla registrazione</h3>
-<ul class="p">
-<li>Alla registrazione utilizziamo una protezione anti-bot (<mark>[Cloudflare Turnstile, da confermare]</mark>), che può trattare dati tecnici del Suo browser per distinguere persone reali da programmi automatici.</li>
-</ul>
-<h3 id="3-5-funzioni-ai-assistente-integrato">3.5 Funzioni AI (assistente integrato)</h3>
-<ul class="p">
-<li>Se il Suo piano include le Funzioni AI e Lei le utilizza, il testo delle Sue richieste (chat o dettatura vocale) e i dati necessari all&#x27;elaborazione vengono trasmessi a un fornitore terzo di intelligenza artificiale (si veda la sezione 5).</li>
-<li>Le conversazioni con l&#x27;assistente AI sono conservate per impostazione predefinita per <b>90 giorni</b>, poi cancellate <mark>[durata modificabile nelle impostazioni]</mark>.</li>
-<li>Le Funzioni AI sono <b>facoltative e disattivabili in ogni momento</b> dalle impostazioni del Suo account.</li>
-</ul>
-<h3 id="3-6-assistenza-e-comunicazioni">3.6 Assistenza e comunicazioni</h3>
-<ul class="p">
-<li>Dati: contenuto delle richieste di assistenza e relativa corrispondenza.</li>
-<li>Scopi: fornirLe supporto, migliorare il Servizio.</li>
-</ul>
-<h3 id="3-7-sito-web-e-newsletter-da-completare-">3.7 Sito web e newsletter <mark>[da completare al lancio del sito]</mark></h3>
-<ul class="p">
-<li><mark>[Descrivere: eventuali statistiche di visita, strumenti utilizzati, eventuale newsletter con iscrizione volontaria e possibilità di disiscrizione in ogni email.]</mark></li>
-</ul>
-<h2 id="4-dove-sono-conservati-i-dati">4. Dove sono conservati i dati</h2>
-<p><b>I dati del Servizio sono ospitati in Svizzera</b>, presso Infomaniak (Ginevra). Questo vale sia per i dati del Suo account sia per i dati che Lei inserisce nel gestionale.</p>
-<p><b>Unica eccezione</b>: l&#x27;utilizzo delle Funzioni AI comporta la trasmissione del testo da elaborare al fornitore AI, i cui server possono trovarsi anche al di fuori della Svizzera (sezione 5).</p>
-<h2 id="5-a-chi-comunichiamo-i-dati">5. A chi comunichiamo i dati</h2>
-<p>Comunichiamo dati personali solo nella misura necessaria all&#x27;erogazione del Servizio, ai seguenti destinatari:</p>
-<div class="tw"><table><tbody>
-<tr><td>Destinatario</td><td>Funzione</td><td>Sede / trasferimento</td></tr>
-<tr><td>Infomaniak Network SA</td><td>Hosting dell&#x27;infrastruttura e dei dati</td><td>Svizzera</td></tr>
-<tr><td>Stripe <mark>[entità da specificare]</mark></td><td>Elaborazione dei pagamenti degli abbonamenti</td><td>UE/USA <mark>[garanzie da verificare con il legale]</mark></td></tr>
-<tr><td><mark>[Fornitore AI: attualmente Google, servizio Gemini, entità da specificare]</mark></td><td>Elaborazione delle richieste delle Funzioni AI, solo se attivate e utilizzate</td><td>Anche fuori Svizzera <mark>[garanzie art. 16 LPD da documentare: Stato adeguato, clausole standard o Swiss-U.S. Data Privacy Framework]</mark></td></tr>
-<tr><td><mark>[Cloudflare, da confermare]</mark></td><td>Protezione anti-bot alla registrazione <mark>[ed eventuale protezione del sito]</mark></td><td>UE/USA <mark>[da verificare]</mark></td></tr>
+<ul class="p"><li>Dati: piano scelto (Standard a CHF 59.00 al mese, con 1 utente incluso, oppure Premium a CHF 99.00 al mese, con 10 utenti inclusi, IVA esclusa, con eventuali utenti aggiuntivi a CHF 9.00 al mese ciascuno, applicati oltre il primo utente nel piano Standard e oltre il decimo nel piano Premium; l'aliquota IVA svizzera è attualmente dell'8,1 per cento), data di attivazione, indirizzo di fatturazione, IDI e numero IVA se comunicati, fatture che Le emettiamo e stato dei pagamenti, eventuali solleciti, eventuali pacchetti di richieste AI acquistati. L'accesso in sola lettura del fiduciario non è conteggiato fra gli utenti fatturati.</li><li>Prova gratuita: la prova dura 30 giorni, si attiva con la registrazione dal sito, non richiede di inserire una carta, comprende il piano Premium completo e può essere fatta una sola volta per azienda (si veda la sezione 3.4). Durante la prova gratuita l'invio delle email dai nostri server è disattivato: il Cliente può chiedere in ogni momento l'attivazione dell'invio scrivendo a <a href="mailto:info@vamio.ch">info@vamio.ch</a> e la concediamo con un clic dal nostro pannello di piattaforma, di norma entro 1 giorno lavorativo e senza costi. Al termine della prova, se non sottoscrive un abbonamento, l'account passa in sola lettura e i dati restano congelati per 60 giorni prima della cancellazione, secondo le regole della sezione 6.</li><li>Pagamento con carta (abbonamento mensile): l'abbonamento si rinnova automaticamente ogni mese e si paga con carta. La carta è inserita direttamente su pagine di Stripe Payments Europe, Limited (Dublino, Irlanda), che elabora il pagamento e ci comunica solo l'esito, le ultime quattro cifre, il circuito e la scadenza. Se un addebito non riesce, dopo i tentativi di addebito previsti l'account viene sospeso automaticamente (sezione 9). Stripe tratta alcuni dati anche in proprio, per esempio per prevenire le frodi, secondo la propria informativa (stripe.com/privacy).</li><li>Pagamento su fattura con QR-Bill (piano Premium annuale): l'abbonamento annuale dà diritto a 2 mesi gratuiti, pari a un equivalente di CHF 82.50 al mese, IVA esclusa, e si paga su fattura con QR-Bill che emettiamo noi. La validità dell'abbonamento è registrata nei nostri sistemi con una data di scadenza. Almeno 30 giorni prima di tale data Le inviamo un avviso e la fattura di rinnovo, con termine di pagamento di 10 giorni dalla data di emissione: il pagamento entro il termine vale come rinnovo. Se la fattura non viene pagata, dopo almeno un promemoria l'abbonamento non si rinnova alla scadenza e l'account passa in sola lettura, con le regole della sezione 6. Nessun annullo automatico è eseguito dal sistema. Per questa modalità non interviene alcun fornitore di pagamento: riceviamo dalla nostra banca i dati del versamento (nome dell'ordinante, importo, riferimento).</li><li>Pacchetti di richieste AI: i pacchetti supplementari (sezione 3.5) si pagano con carta, in un pagamento singolo tramite Stripe, senza rinnovo automatico. Trattiamo la data di acquisto, il pacchetto scelto, l'importo e i crediti residui.</li><li>Lavori su richiesta: se ci chiede prestazioni non comprese nel canone, per esempio la configurazione iniziale o la formazione, le fatturiamo alla tariffa di CHF 80.00 all'ora, IVA esclusa, e trattiamo i dati necessari all'offerta e alla fattura.</li><li>Nel Suo account, il Titolare dell'account trova la sezione Il mio abbonamento, con la data di attivazione, il prossimo rinnovo, il metodo di pagamento, le nostre fatture da scaricare, gli utenti aggiuntivi, i pacchetti AI con i crediti residui e la disdetta.</li><li>Scopi: incassare i canoni, tenere la nostra contabilità, adempiere ai nostri obblighi fiscali e, se necessario, recuperare i crediti non pagati e far valere i nostri diritti.</li><li>Le nostre fatture e i relativi giustificativi li conserviamo per 10 anni dalla fine dell'esercizio (art. 958f CO), anche dopo la chiusura del Suo account.</li></ul>
+<h3 id="3-3-utilizzo-del-servizio-sicurezza-e-statistiche">3.3 Utilizzo del Servizio, sicurezza e statistiche</h3>
+<ul class="p"><li>Dati: indirizzo IP, data e ora degli accessi, tipo di browser e dispositivo, esito dei tentativi di accesso, e un registro delle operazioni importanti fatte nell'app (chi ha creato, modificato, inviato, annullato o ripristinato un documento, quando e verso quale destinatario; chi ha fatto un export; chi ha cambiato le impostazioni).</li><li>Scopi: far funzionare Vamio, individuare accessi non autorizzati e abusi, risolvere problemi tecnici, e permetterLe di ricostruire chi ha fatto cosa nella Sua azienda (per esempio quando e a chi è stata inviata una fattura), oltre a provare le operazioni compiute e le accettazioni contrattuali.</li><li>Statistiche: usiamo i dati di utilizzo in forma aggregata e anonima (per esempio quante aziende usano una funzione) per capire cosa migliorare. Non usiamo mai a questo scopo il contenuto dei Suoi documenti né i dati dei Suoi clienti.</li><li>Conservazione: registri tecnici (log) 12 mesi; registro delle operazioni 12 mesi e comunque cancellato insieme all'account alla fine del contratto; registro degli invii email (data e ora, destinatario, esito) 12 mesi. L'annotazione dell'invio che resta sul documento (data e destinatario) segue invece il documento stesso ed è conservata 10 anni. Si veda la tabella della sezione 6.</li></ul>
+<h3 id="3-4-protezione-contro-gli-abusi-alla-registrazione-e-prove-multiple">3.4 Protezione contro gli abusi alla registrazione e prove multiple</h3>
+<p>Alla registrazione usiamo Cloudflare Turnstile, un servizio di Cloudflare, Inc. (Stati Uniti) che distingue le persone reali dai programmi automatici. Turnstile elabora alcuni segnali tecnici del Suo browser (indirizzo IP, caratteristiche della connessione cifrata, tipo di browser, identificativo del nostro sito e pagina di provenienza); non usa cookie di tracciamento e non serve a identificarLa. Cloudflare tratta questi segnali per nostro conto e, secondo la propria informativa, anche in proprio per migliorare il servizio. Il trasferimento negli Stati Uniti si basa sulla decisione di adeguatezza del Consiglio federale limitata alle organizzazioni certificate secondo il Swiss-U.S. Data Privacy Framework, tra cui Cloudflare, Inc. (art. 16 cpv. 1 LPD e allegato 1 OPDa n. 44); in subordine, se la certificazione venisse meno, si applicano le clausole tipo di protezione dei dati riconosciute dall'IFPDT con gli adattamenti svizzeri (art. 16 cpv. 2 lett. d LPD). Si veda la sezione 5.</p>
+<p>La prova gratuita è concessa una sola volta per azienda. Per farla rispettare, dopo la cancellazione di un account di prova non convertito conserviamo per 12 mesi un'impronta non reversibile (hash) dell'indirizzo email e dell'IDI usati: ci permette solo di riconoscere una nuova registrazione con gli stessi dati, non di risalire a Lei. Registriamo inoltre l'indirizzo IP e la data della registrazione per la durata indicata nella sezione 6.</p>
+<h3 id="3-5-funzioni-ai-assistente-integrato-compreso-in-entrambi-i-piani">3.5 Funzioni AI (assistente integrato, compreso in entrambi i piani)</h3>
+<p>Le Funzioni AI sono facoltative e comprese in entrambi i piani, con un numero massimo di richieste al mese: 20 richieste nel piano Standard, per provare la funzione, e 500 richieste nel piano Premium. Sono spente quando l'account viene creato: le attiva il Titolare dell'account dalle impostazioni, dopo aver letto un avviso che ripete le informazioni di questa sezione, e può spegnerle in ogni momento. Le Funzioni AI sono disattivate per impostazione predefinita come misura volontaria del Fornitore, ispirata al principio della protezione dei dati mediante impostazioni predefinite (art. 7 cpv. 3 LPD), e per consentire al Cliente, quale titolare del trattamento, di rispettare a sua volta tale principio. Con le Funzioni AI spente nessun contenuto del Suo gestionale viene inviato a un fornitore AI.</p>
+<p>Raggiunto il limite mensile di richieste, le Funzioni AI si fermano fino al mese successivo, oppure può passare al piano superiore o acquistare un pacchetto di richieste supplementari. Non c'è alcun addebito automatico a consumo e il limite non ha effetto sulle altre funzioni del Servizio.</p>
+<p>I pacchetti supplementari sono due: 100 richieste a CHF 9.00 e 500 richieste a CHF 29.00, IVA esclusa. Si pagano con carta in un pagamento singolo, valgono 30 giorni dall'acquisto e non si rinnovano automaticamente. I dati del pagamento sono trattati come descritto nella sezione 3.2.</p>
+<p>Oltre a preparare bozze di offerte, fatture, richiami ed email, l'assistente aiuta a usare Vamio e a scrivere i testi dei documenti e dei messaggi. Un avviso permanente nell'app ricorda che l'assistente può commettere errori e che il risultato va sempre controllato. I calcoli (totali, IVA, dati della QR-Bill) sono sempre eseguiti dal programma e mai dall'assistente. La consulenza fiscale e legale non rientra nel suo compito: per quelle domande si rivolga al Suo fiduciario o al Suo legale.</p>
+<p>Che cosa succede quando le usa:</p>
+<div class="tw" tabindex="0"><table>
+<thead><tr><th>Che cosa fa</th><th>Quali dati vengono trasmessi</th><th>A chi e dove</th><th>Per quanto tempo</th></tr></thead>
+<tbody>
+<tr><td>Assistente in chat (bozze di offerte, fatture, richiami, email)</td><td>Il testo che Lei scrive nella chat e i dati del documento su cui sta lavorando (per esempio nome del cliente, posizioni, importi)</td><td>Google (servizio Gemini), tramite un contratto a pagamento; Stati Uniti d'America e Irlanda, oltre agli altri Paesi in cui il gruppo Google dispone di strutture (sezione 5)</td><td>Il fornitore elabora il testo per generare la risposta e può conservarlo per un periodo limitato ai soli controlli contro gli abusi, senza usarlo per addestrare o migliorare i modelli. Noi conserviamo la conversazione per 90 giorni, poi la cancelliamo automaticamente; può cancellarla prima dalle impostazioni</td></tr>
+<tr><td>Dettatura vocale, dove disponibile</td><td>Il testo della richiesta trascritto, come per la chat</td><td>Come sopra. Il luogo e le modalità della trascrizione sono indicati nell'app al momento dell'attivazione della funzione; se comportassero un trattamento fuori dalla Svizzera, aggiorneremo questa informativa secondo la sezione 12</td><td>Come sopra</td></tr>
 </tbody></table></div>
-<p>Oltre a questi casi, comunichiamo dati solo se richiesto dalla legge o da un&#x27;autorità competente, o con il Suo consenso.</p>
-<p>Non vendiamo i Suoi dati e non li utilizziamo per pubblicità di terzi.</p>
+<p>Regole che ci siamo dati:</p>
+<ul class="p"><li>usiamo solo servizi AI a pagamento, con un contratto che vieta al fornitore di usare i Suoi contenuti per addestrare o migliorare i propri modelli; il livello gratuito, che invece li usa, non viene impiegato. Nemmeno noi usiamo i Suoi contenuti per addestrare modelli;</li><li>inviamo al fornitore solo i dati necessari alla richiesta, mai l'intero archivio, mai i dati di pagamento o le credenziali;</li><li>l'assistente propone soltanto: nessun documento viene creato, modificato, eliminato o inviato senza la Sua conferma;</li><li>non inserisca nelle richieste all'assistente dati di salute, opinioni religiose o politiche, informazioni su perseguimenti e sanzioni penali o amministrativi o altri dati particolarmente delicati, né Suoi né dei Suoi clienti: le Funzioni AI non sono pensate per questi dati e comportano una trasmissione all'estero.</li></ul>
+<p>L'attivazione delle Funzioni AI da parte del Titolare dell'account vale come istruzione documentata ai sensi dell'art. 9 LPD.</p>
+<h3 id="3-6-assistenza">3.6 Assistenza</h3>
+<ul class="p"><li>Dati: le Sue richieste di assistenza (email, eventuali schermate o file che ci invia), la nostra corrispondenza e le note interne sulla soluzione.</li><li>Accesso al Suo account: se serve per risolvere il Suo problema, una persona del nostro team può consultare i dati del Suo account e del Suo gestionale, solo per il tempo necessario e solo per la Sua richiesta. Ogni accesso di assistenza viene registrato nel registro delle operazioni.</li><li>Scopi: aiutarLa, capire i problemi ricorrenti e migliorare il Servizio.</li><li>Tempi: rispondiamo di norma entro 2 giorni lavorativi.</li><li>Conservazione: 2 anni dalla chiusura della richiesta, per poter ritrovare la storia dei problemi già risolti.</li><li>Contatto: <a href="mailto:info@vamio.ch">info@vamio.ch</a> (unico recapito per assistenza, protezione dei dati e segnalazioni di sicurezza).</li></ul>
+<h3 id="3-7-sito-web-comunicazioni-sul-prodotto-e-newsletter">3.7 Sito web, comunicazioni sul prodotto e newsletter</h3>
+<ul class="p"><li>Sito vamio.ch: quando visita il sito, il nostro server registra automaticamente dati tecnici (indirizzo IP, pagina richiesta, data e ora, tipo di browser) in un registro conservato 12 mesi, per motivi di sicurezza e funzionamento. Non usiamo strumenti di analisi di terzi né pixel pubblicitari; se in futuro aggiungeremo statistiche di visita, useremo strumenti senza cookie o ospitati in Svizzera e aggiorneremo la sezione 11.</li><li>Comunicazioni operative: Le inviamo via email le comunicazioni necessarie al contratto (conferme, fatture, avvisi di pagamento e di sicurezza, promemoria prima della cancellazione dei dati, modifiche dei documenti contrattuali). Non dipendono dal Suo consenso e non possono essere disattivate finché l'account esiste.</li><li>Novità del Servizio: in quanto nostro cliente, possiamo inviarLe di tanto in tanto un'email con novità e nuove funzioni di Vamio. Può rinunciarvi in ogni momento, gratuitamente, con il link in fondo a ogni messaggio o dalle impostazioni (art. 3 cpv. 1 lett. o LCSl). Non cediamo il Suo indirizzo a terzi per scopi pubblicitari.</li><li>Newsletter per chi non è ancora cliente: solo con iscrizione volontaria confermata via email (doppio consenso); può cancellarsi da ogni messaggio.</li><li>Modulo di contatto ed email a <a href="mailto:info@vamio.ch">info@vamio.ch</a>: conserviamo la corrispondenza per il tempo necessario a rispondere e comunque non oltre 2 anni.</li></ul>
+<h3 id="3-8-email-inviate-per-conto-dei-nostri-clienti">3.8 Email inviate per conto dei nostri clienti</h3>
+<p>Quando un'azienda che usa Vamio Le invia un'offerta, una fattura o un richiamo, il messaggio parte dai nostri server di posta in Svizzera. Il mittente tecnico è un indirizzo del dominio vamio.ch, il nome visualizzato è quello dell'azienda cliente e l'indirizzo di risposta è la casella di posta di quell'azienda: rispondendo al messaggio scrive a lei, non a noi. Il messaggio viene poi consegnato al server di posta del destinatario, che può trovarsi anche fuori dalla Svizzera: la consegna avviene su istruzione dell'azienda mittente, che resta titolare dei Suoi dati (sezione 4). Trattiamo il Suo indirizzo email e il contenuto del documento solo per consegnare il messaggio, per conto dell'azienda mittente. Registriamo data e ora, destinatario ed esito della consegna per 12 mesi, come prova dell'invio e per gestire i mancati recapiti; l'annotazione dell'invio che resta sul documento è conservata 10 anni insieme al documento.</p>
+<p>All'azienda mittente inviamo una conferma di avvenuto invio: è un'opzione attiva per impostazione predefinita, che il Cliente può disattivare dalle impostazioni. L'avviso di invio fallito viene inviato sempre e non può essere disattivato.</p>
+<p>Durante la prova gratuita l'invio delle email dai nostri server è disattivato: il Cliente può chiedere in ogni momento l'attivazione dell'invio scrivendo a <a href="mailto:info@vamio.ch">info@vamio.ch</a> e la concediamo con un clic dal nostro pannello di piattaforma, di norma entro 1 giorno lavorativo e senza costi.</p>
+<p>Non inseriamo nelle email pixel invisibili di lettura che ci dicano se e quando Lei apre il messaggio. Se l'email contiene il link a una pagina pubblica di accettazione di un'offerta, registriamo però l'apertura di quella pagina e l'esito che Lei sceglie, come prova dell'accettazione stessa. Le pagine pubbliche di accettazione sono ospitate all'indirizzo accept.vamio.ch, unico per tutte le aziende clienti, e mostrano il logo e i dati dell'azienda che invia. L'accettazione elettronica con pagina pubblica è compresa nei Piani che la prevedono, secondo la lista delle funzioni pubblicata su vamio.ch: negli altri Piani l'accettazione dell'offerta è registrata manualmente dall'azienda mittente e nessuna pagina pubblica viene creata. I link già inviati in passato dall'indirizzo accept.vamdeco.agency restano validi. Sulla pagina ha tre possibilità: accettare l'offerta, chiedere modifiche oppure non accettarla; di ognuna di queste risposte informiamo via email il Titolare dell'account dell'azienda mittente.</p>
+<p>L'azienda mittente può anche chiedere di inviare i messaggi dalla propria casella di posta o dal proprio server di posta (SMTP). La funzione viene abilitata da noi dal pannello di piattaforma; poi è il Cliente a inserire le proprie credenziali dalle impostazioni, che conserviamo in forma cifrata e usiamo soltanto per gli invii richiesti dal Cliente. In questo caso i messaggi partono dal sistema del fornitore di posta scelto dal Cliente, con le regole e la conservazione di quel fornitore; la compatibilità dipende dal fornitore di posta e va verificata caso per caso.</p>
+<p>Per rispondere, correggere i Suoi dati o non ricevere più messaggi si rivolga direttamente all'azienda mittente.</p>
+<h2 id="4-dove-sono-conservati-i-dati">4. Dove sono conservati i dati</h2>
+<p>Tutti i dati del Servizio (i dati del Suo account, tutto quello che inserisce nel gestionale, i documenti e i PDF generati e le copie di sicurezza) sono archiviati e trattati in Svizzera, su server di Infomaniak Network SA (Ginevra), che si impegna per contratto a non spostarli all'estero. Le copie di sicurezza sono cifrate e restano in Svizzera: sono conservate sul server e su Swiss Backup Infomaniak; nessuna copia dei dati di sistema è conservata su dispositivi personali del Fornitore. Anche le email inviate dal Servizio partono da server situati in Svizzera.</p>
+<p>Il traffico tra il Suo browser e il Servizio transita, in forma cifrata, sulla rete di protezione di Cloudflare, Inc. (Stati Uniti). Questa rete filtra gli attacchi informatici e verifica alla registrazione che chi si iscrive sia una persona reale. Per svolgere questa funzione Cloudflare decifra temporaneamente il traffico sui propri nodi, che possono trovarsi anche fuori dalla Svizzera, senza conservarne il contenuto in modo permanente. Le garanzie applicabili sono indicate nella sezione 5.</p>
+<p>Le uscite di dati dalla Svizzera sono quattro:</p>
+<ol class="n" start="1"><li>il transito tecnico attraverso la rete di protezione di Cloudflare, che riguarda i dati in viaggio e non la loro conservazione;</li><li>i pagamenti con carta, elaborati da Stripe (sezione 3.2);</li><li>le Funzioni AI di Google, solo per le richieste che Lei rivolge all'assistente e solo se le Funzioni AI sono attivate e usate (sezione 3.5). Con le Funzioni AI spente nessun contenuto del Suo gestionale viene inviato a un fornitore AI;</li><li>la consegna delle email ai destinatari che Lei sceglie, verso i loro server di posta, che possono trovarsi all'estero: questa avviene su Sua istruzione, e di quei dati il titolare è Lei, non noi.</li></ol>
+<p>Le prime tre dipendono da noi, che le decidiamo e le governiamo con i contratti indicati nella sezione 5. La quarta dipende invece dal Cliente che sceglie i destinatari, e la descriviamo qui perché anche in quel caso dei dati escono di fatto dalla Svizzera (si veda la sezione 3.8).</p>
+<p>Questo elenco di quattro voci riguarda tutti i dati trattati nell'ambito del Servizio, compresi i dati del Suo account e della Sua fatturazione, dei quali siamo titolari autonomi. L'Accordo sul trattamento dei dati (DPA) copre invece un perimetro più ristretto, cioè soltanto i dati che Lei inserisce nel gestionale (i dati dei Suoi clienti): per quel perimetro le uscite dichiarate sono tre, perché Stripe non tratta mai quei dati, ma soltanto i dati dell'abbonamento e della fatturazione. Le due liste non si contraddicono: descrivono insiemi di dati diversi.</p>
+<p>Preferiamo indicare con precisione i casi in cui dei dati escono dalla Svizzera, invece di darne una descrizione generica. Se in futuro rinunceremo a Cloudflare o adotteremo la localizzazione europea del suo traffico, aggiorneremo questa informazione secondo la sezione 12.</p>
+<h2 id="5-a-chi-comunichiamo-i-dati">5. A chi comunichiamo i dati</h2>
+<p>Non vendiamo i Suoi dati, non li cediamo a terzi per pubblicità e non li usiamo per addestrare modelli di intelligenza artificiale. Li comunichiamo solo ai fornitori che ci servono per far funzionare Vamio, elencati qui sotto, e nei pochi altri casi indicati. L'elenco completo dei fornitori (sub-responsabili) è questo: lo teniamo aggiornato in questo documento. Per ogni fornitore indichiamo lo Stato in cui i dati sono trattati e la garanzia applicabile (art. 19 cpv. 4 LPD).</p>
+<div class="tw" tabindex="0"><table>
+<thead><tr><th>Destinatario</th><th>Che cosa fa per noi</th><th>Dati coinvolti</th><th>Paese e garanzia</th></tr></thead>
+<tbody>
+<tr><td>Infomaniak Network SA, Rue Eugène-Marziano 25, 1227 Les Acacias (Ginevra), Svizzera</td><td>Ospita server, banca dati, documenti e copie di sicurezza; invia le email del Servizio</td><td>Tutti i dati del Servizio</td><td>Svizzera. Contratto sul trattamento dei dati sottoscritto; fornitore certificato ISO 27001</td></tr>
+<tr><td>Stripe Payments Europe, Limited, Dublino, Irlanda (gruppo Stripe)</td><td>Elabora i pagamenti con carta degli abbonamenti mensili e dei pacchetti di richieste AI</td><td>Dati della carta (inseriti direttamente su pagine Stripe), nome, email, importo</td><td>Irlanda (Stato con protezione adeguata, allegato 1 OPDa). Per i trattamenti di Stripe, Inc. negli Stati Uniti: adeguatezza riconosciuta dal Consiglio federale, limitata alle organizzazioni certificate secondo il Swiss-U.S. Data Privacy Framework (art. 16 cpv. 1 LPD e allegato 1 OPDa n. 44); in subordine, se la certificazione venisse meno, le clausole tipo di protezione dei dati riconosciute dall'IFPDT con gli adattamenti svizzeri (art. 16 cpv. 2 lett. d LPD)</td></tr>
+<tr><td>Google Cloud EMEA Limited, 70 Sir John Rogerson's Quay, Dublino 2, Irlanda (gruppo Google LLC, Stati Uniti)</td><td>Elabora le richieste delle Funzioni AI (servizio Gemini), solo per le richieste rivolte all'assistente e solo se Lei attiva e usa le Funzioni AI; contratto a pagamento che vieta l'uso dei dati per addestrare o migliorare i modelli</td><td>Il testo delle richieste e i dati del documento in lavorazione</td><td>Stati Uniti d'America e Irlanda, oltre agli altri Paesi in cui il gruppo Google dispone di strutture. Adeguatezza riconosciuta dal Consiglio federale, limitata alle organizzazioni certificate secondo il Swiss-U.S. Data Privacy Framework, tra cui Google LLC (art. 16 cpv. 1 LPD e allegato 1 OPDa n. 44); per gli Stati membri dell'Unione europea e gli altri Stati elencati nell'allegato 1 OPDa: adeguatezza riconosciuta dal Consiglio federale; in subordine, se la certificazione venisse meno o per ogni altro Stato, le clausole tipo di protezione dei dati riconosciute dall'IFPDT con gli adattamenti svizzeri (art. 16 cpv. 2 lett. d LPD)</td></tr>
+<tr><td>Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, Stati Uniti</td><td>Rete di protezione dagli attacchi informatici davanti all'app e al sito (con decifratura temporanea del traffico in transito) e verifica anti-bot alla registrazione (Turnstile)</td><td>Indirizzo IP, segnali tecnici del browser e traffico in transito, non memorizzato in modo permanente</td><td>Stati Uniti, Stati membri dell'Unione europea e potenzialmente altri Stati in cui si trovano nodi della rete. Per il trattamento negli Stati Uniti: adeguatezza riconosciuta dal Consiglio federale, limitata alle organizzazioni certificate secondo il Swiss-U.S. Data Privacy Framework, tra cui Cloudflare, Inc. (art. 16 cpv. 1 LPD e allegato 1 OPDa n. 44). Per gli Stati membri dell'Unione europea e gli altri Stati elencati nell'allegato 1 OPDa: adeguatezza riconosciuta dal Consiglio federale. Per ogni altro Stato in cui possono trovarsi nodi della rete, e in subordine se la certificazione venisse meno: le clausole tipo di protezione dei dati riconosciute dall'IFPDT con gli adattamenti svizzeri, contenute nel contratto Cloudflare (art. 16 cpv. 2 lett. d LPD)</td></tr>
+</tbody></table></div>
+<p>Nota sulle certificazioni. Lo stato della certificazione di ciascuna organizzazione statunitense indicata in questa tabella viene da noi riverificato almeno una volta all'anno sul registro ufficiale del Swiss-U.S. Data Privacy Framework. Se una certificazione venisse meno, si applicano le clausole tipo di protezione dei dati riconosciute dall'IFPDT con gli adattamenti svizzeri e La informiamo secondo la sezione 12.</p>
+<p>Se il Cliente sceglie di inviare le email dalla propria casella o dal proprio server di posta (sezione 3.8), il fornitore di posta che ha scelto tratta i messaggi per suo conto: quel fornitore è scelto dal Cliente e non rientra in questo elenco.</p>
+<p>Altri casi in cui possiamo comunicare dati:</p>
+<ul class="p"><li>ai nostri consulenti tenuti al segreto (il nostro fiduciario, il nostro legale), limitatamente ai dati contabili e alle pratiche che li riguardano;</li><li>a una società di incasso, a un avvocato o a un tribunale, se dobbiamo recuperare un credito o far valere o difendere i nostri diritti;</li><li>ad autorità svizzere, se un obbligo di legge ce lo impone; in tal caso, salvo divieto di legge, La informiamo e comunichiamo solo quanto strettamente richiesto; non diamo seguito a richieste di autorità estere prive di una base nel diritto svizzero;</li><li>a chi dovesse subentrarci nella gestione di Vamio in caso di cessione dell'attività o fusione, alle stesse condizioni di questa informativa e con avviso a Lei;</li><li>con il Suo consenso, in ogni altro caso.</li></ul>
+<p>Se cambiamo un fornitore o lo Stato in cui i dati sono trattati, La avvisiamo almeno 30 giorni prima secondo la procedura prevista dal DPA per i sub-responsabili: può opporsi per iscritto con motivi fondati e, se non troviamo una soluzione, disdire il contratto. Se non riceviamo opposizione entro il termine, la modifica si considera accettata.</p>
 <h2 id="6-per-quanto-tempo-conserviamo-i-dati">6. Per quanto tempo conserviamo i dati</h2>
-<ul class="p">
-<li><b>Account attivo</b>: per tutta la durata del contratto.</li>
-<li><b>Dopo la cessazione del contratto</b> (disdetta, mancato pagamento, fine del periodo di prova senza sottoscrizione): i dati dell&#x27;account e del gestionale restano <b>congelati per 60 giorni</b> (con promemoria via email), per permetterLe di riattivare l&#x27;account o esportare i dati. Trascorsi i 60 giorni, i dati vengono <b>cancellati definitivamente</b>, salvo obblighi legali di conservazione a nostro carico (ad esempio documenti contabili nostri) e salvo copie di backup, eliminate con la normale rotazione entro <mark>[indicare periodo]</mark>.</li>
-<li><b>Conversazioni AI</b>: 90 giorni per impostazione predefinita.</li>
-<li><b>Log tecnici</b>: <mark>[6-12 mesi, da definire]</mark>.</li>
-<li><b>Avvertenza</b>: gli obblighi legali di conservazione dei documenti commerciali della Sua azienda (in particolare 10 anni per le fatture, art. 958f CO) restano a Suo carico. Prima della cancellazione deve esportare i Suoi documenti con la funzione di export ZIP.</li>
-</ul>
-<h2 id="7-export-dei-dati-portabilit">7. Export dei dati (portabilità)</h2>
-<p>Dall&#x27;app può in ogni momento esportare autonomamente tutti i Suoi dati e documenti in un <b>archivio ZIP completo</b> (dati strutturati + PDF), senza costi aggiuntivi e senza doverci contattare.</p>
-<h2 id="8-sicurezza">8. Sicurezza</h2>
-<p>Adottiamo misure tecniche e organizzative adeguate a proteggere i Suoi dati, tra cui: isolamento dei dati per cliente imposto a livello di database, cifratura del traffico, autenticazione con verifica email e 2FA facoltativa, registro delle attività, backup regolari, accessi ai sistemi limitati e protetti. Il dettaglio delle misure è descritto nell&#x27;allegato B del DPA.</p>
-<h2 id="9-i-suoi-diritti">9. I Suoi diritti</h2>
-<p>Ai sensi della LPD Lei ha il diritto di:</p>
-<ul class="p">
-<li><b>accesso</b>: sapere se trattiamo dati che La riguardano e riceverne copia (art. 25 LPD);</li>
-<li><b>consegna e trasmissione</b>: ricevere in un formato elettronico corrente i dati che ci ha comunicato (art. 28 LPD); nel Servizio questo diritto è coperto anche dall&#x27;export ZIP self-service;</li>
-<li><b>rettifica</b>: far correggere dati inesatti (art. 32 LPD);</li>
-<li><b>cancellazione</b>: chiedere la cancellazione dei dati, nei limiti degli obblighi legali di conservazione;</li>
-<li><b>opposizione</b>: opporsi a un trattamento determinato.</li>
-</ul>
-<p>Per esercitare i Suoi diritti può scriverci a <mark>[info@vamio.ch]</mark>. Potremmo chiederLe una prova d&#x27;identità per proteggere i Suoi dati da richieste abusive. Rispondiamo di regola entro 30 giorni.</p>
-<p>Se ritiene che il trattamento violi la legge, può rivolgersi all&#x27;<b>Incaricato federale della protezione dei dati e della trasparenza (IFPDT)</b>, Feldeggweg 1, 3003 Berna (www.edoeb.admin.ch).</p>
-<p>Nota: per i dati inseriti nel gestionale da una azienda cliente di Vamio (ad esempio se Lei ha ricevuto un&#x27;offerta o una fattura da una ditta che usa Vamio), il titolare del trattamento è quella ditta: La invitiamo a rivolgersi direttamente a lei. Se una richiesta arriva a noi, la inoltriamo alla ditta interessata.</p>
-<h2 id="10-cookie-e-tecnologie-simili">10. Cookie e tecnologie simili</h2>
-<p><mark>[Sezione da completare quando sito e app saranno definitivi. Impostazione prevista: solo cookie tecnici necessari al funzionamento e alla sessione di login; eventuali statistiche con strumenti rispettosi della privacy da elencare; nessun cookie pubblicitario di terzi. Se verranno usati strumenti soggetti a consenso, aggiungere banner e gestione del consenso.]</mark></p>
-<h2 id="11-modifiche-della-presente-informativa">11. Modifiche della presente informativa</h2>
-<p>Possiamo aggiornare questa informativa quando necessario (ad esempio per nuove funzioni o nuovi fornitori). La versione aggiornata è sempre pubblicata sul sito e nell&#x27;app, con la data della versione. In caso di modifiche sostanziali La informeremo via email o con un avviso nell&#x27;app.</p>
-<h2 id="12-contatto">12. Contatto</h2>
-<p>Per ogni domanda sulla protezione dei dati:</p>
-<p><b>VAM Deco Sagl</b></p>
-<p><mark>[indirizzo completo]</mark>, 6514 Sementina, Svizzera</p>
-<p><mark>[info@vamio.ch]</mark></p>
-<p>*Ultima modifica: <mark>[data di pubblicazione]</mark>. Bozza 0.1 del 27.08.2026, in attesa di revisione legale.*</p></article></main>
-<footer><div class="f-in"><div><b>Vamio</b> è un prodotto di VAM Deco Sagl · Via Pobbia 4d, 6514 Sementina, Svizzera<br>info@vamio.ch</div>
-<div><a href="condizioni.html">Condizioni d'uso</a> · <a href="privacy.html">Protezione dei dati</a> · <a href="dpa.html">Trattamento dei dati su mandato</a> · <a href="cookie.html">Cookie</a></div></div></footer>
-</body></html>
+<div class="tw" tabindex="0"><table>
+<thead><tr><th>Dati</th><th>Durata</th><th>Perché</th></tr></thead>
+<tbody>
+<tr><td>Dati dell'account e del gestionale, account attivo</td><td>Per tutta la durata del contratto</td><td>Servono per fornire il Servizio</td></tr>
+<tr><td>Dopo la fine del contratto (disdetta, mancato pagamento, prova non convertita)</td><td>Congelati per 60 giorni, poi cancellati definitivamente</td><td>Per permetterLe di riattivare l'account o esportare i dati; Le inviamo promemoria via email prima della cancellazione</td></tr>
+<tr><td>PDF di offerte, fatture e richiami generati dal Servizio, comprese le bozze</td><td>10 anni durante la durata del contratto; alla fine del contratto seguono le regole di cancellazione dell'account indicate qui sopra</td><td>Tenere a disposizione i documenti per tutto il periodo di conservazione commerciale (art. 958f CO)</td></tr>
+<tr><td>Annotazione dell'invio sul documento (data e destinatario)</td><td>10 anni, insieme al documento</td><td>Poter dimostrare quando e a chi il documento è stato inviato</td></tr>
+<tr><td>Copie di sicurezza</td><td>Cifrate, sovrascritte ed eliminate entro 30 giorni con la normale rotazione dei backup; dopo la cancellazione definitiva a fine contratto non vengono usate per ripristinare dati cancellati, salvo ripristino completo del sistema dopo un incidente, nel qual caso i dati cancellati vengono nuovamente eliminati senza indugio. Durante il contratto può chiedere il ripristino di singoli dati cancellati per errore entro 30 giorni, alle condizioni delle Condizioni d'uso</td><td>Continuità del Servizio</td></tr>
+<tr><td>Conversazioni con l'assistente AI</td><td>90 giorni, oppure prima se le cancella Lei</td><td>Per permetterLe di rileggerle</td></tr>
+<tr><td>Registri tecnici, o log (indirizzo IP, accessi, log del sito)</td><td>12 mesi</td><td>Sicurezza e diagnostica</td></tr>
+<tr><td>Registro delle operazioni fatte nell'app</td><td>12 mesi, e comunque cancellato con l'account alla fine del contratto</td><td>Poter ricostruire chi ha fatto cosa e provare le operazioni compiute</td></tr>
+<tr><td>Registro degli invii email (data e ora, destinatario, esito)</td><td>12 mesi</td><td>Prova dell'invio in caso di contestazioni</td></tr>
+<tr><td>Impronta (hash) di email e IDI degli account di prova non convertiti</td><td>12 mesi</td><td>Far rispettare la regola di una sola prova gratuita per azienda</td></tr>
+<tr><td>Richieste di assistenza</td><td>2 anni dalla chiusura della richiesta</td><td>Storico dei problemi</td></tr>
+<tr><td>Documentazione delle violazioni della sicurezza dei dati</td><td>Almeno 2 anni</td><td>Obbligo di documentazione (art. 24 LPD e art. 15 cpv. 4 OPDa) e obblighi previsti dal DPA</td></tr>
+<tr><td>Nostre fatture e documenti contabili</td><td>10 anni dalla fine dell'esercizio</td><td>Obblighi di legge (art. 958f CO) e tutela in caso di controversie</td></tr>
+<tr><td>Prova dell'accettazione delle Condizioni d'uso e del DPA (versione dei documenti accettati, data e ora, identificativo dell'account e dell'utente)</td><td>Per la durata del contratto e per i 10 anni successivi</td><td>Nostro interesse legittimo a provare il contratto, con il termine dell'art. 958f CO applicato per analogia</td></tr>
+<tr><td>Indirizzo IP registrato al momento dell'accettazione</td><td>12 mesi, poi cancellato dalla registrazione</td><td>Proporzionalità: la registrazione resta valida come prova anche senza l'indirizzo IP</td></tr>
+</tbody></table></div>
+<p>Le fatture che Lei emette con Vamio non si possono eliminare: si possono soltanto annullare oppure archiviare. Il ripristino a bozza di una fattura annullata è riservato al Titolare dell'account ed è registrato nel registro delle operazioni. Le offerte restano invece eliminabili, secondo i permessi assegnati agli utenti.</p>
+<p>Avvertenza: i documenti che Lei emette con Vamio (offerte, fatture, richiami) sono documenti della Sua azienda e deve conservarli Lei per 10 anni (art. 958f CO). Vamio non è un archivio a norma: prima della cancellazione scarichi l'archivio ZIP (sezione 7) e lo conservi su un supporto che ne garantisca integrità e leggibilità nel tempo. Dopo la cancellazione definitiva non possiamo più fornirLe nulla; su richiesta Le confermiamo per iscritto l'avvenuta cancellazione.</p>
+<h2 id="7-esportare-i-suoi-dati">7. Esportare i Suoi dati</h2>
+<p>In ogni momento, anche durante i 60 giorni di congelamento dopo la fine del contratto, può scaricare dall'app un archivio ZIP completo, gratuitamente e senza chiedercelo. Contiene i Suoi contatti e i Suoi documenti in un formato elettronico corrente, i PDF di offerte, fatture e richiami, il logo e gli allegati. È lo stesso strumento con cui esercita il diritto alla consegna dei Suoi dati (sezione 10). Le consigliamo di scaricarlo almeno a ogni chiusura d'esercizio e, in ogni caso, prima di disdire.</p>
+<p>I dati che La riguardano e che trattiamo come titolare (dati dell'account, fatture di abbonamento, registri degli accessi) Le vengono consegnati su richiesta a <a href="mailto:info@vamio.ch">info@vamio.ch</a> in un formato elettronico corrente entro 30 giorni (art. 28 LPD; termine di 30 giorni secondo gli art. 22 e 18 cpv. 1 OPDa).</p>
+<h2 id="8-come-proteggiamo-i-dati-e-cosa-puo-fare-lei">8. Come proteggiamo i dati e cosa può fare Lei</h2>
+<p><strong>Cosa facciamo noi</strong></p>
+<ul class="p"><li>Ogni azienda vede solo i propri dati: la separazione è imposta dalla banca dati stessa, non solo dall'app.</li><li>La connessione tra il Suo browser e Vamio è sempre cifrata (https).</li><li>Le password sono conservate solo in forma non leggibile, nemmeno da noi. La verifica in due passaggi con codice via email è obbligatoria per tutti gli utenti; chi lo desidera può aggiungere un'app di autenticazione.</li><li>Facciamo ogni giorno una copia di sicurezza cifrata, conservata 30 giorni in Svizzera, sul server e su Swiss Backup Infomaniak, con prove periodiche di ripristino. Nessuna copia dei dati di sistema è conservata su dispositivi personali del Fornitore.</li><li>Teniamo un registro delle operazioni importanti (chi ha fatto cosa e quando), con accesso limitato.</li><li>L'accesso ai sistemi è limitato a persone nominate, con chiavi personali, ed è registrato; gli ambienti di prova sono separati dalla produzione; installiamo regolarmente gli aggiornamenti di sicurezza.</li><li>Le credenziali del server di posta che il Cliente ci affida per l'invio dalla propria casella sono conservate in forma cifrata e usate solo per gli invii che il Cliente richiede.</li><li>Una rete di protezione filtra gli attacchi informatici prima che raggiungano il Servizio (sezione 4).</li></ul>
+<p>Il dettaglio delle misure è nell'Allegato B del DPA e viene rivisto almeno una volta all'anno. Su richiesta, una volta all'anno e gratuitamente, mettiamo a disposizione la documentazione che dimostra il rispetto di questi impegni.</p>
+<p><strong>Cosa Le chiediamo</strong></p>
+<ul class="p"><li>Scelga una password robusta e non la condivida. La verifica in due passaggi con codice via email è sempre attiva; se vuole una protezione ulteriore, aggiunga un'app di autenticazione.</li><li>Tolga subito l'accesso ai Collaboratori che lasciano l'azienda: finché l'accesso resta attivo, le loro operazioni sono a Suo carico.</li><li>Ci avvisi a <a href="mailto:info@vamio.ch">info@vamio.ch</a> se sospetta un accesso non autorizzato al Suo account.</li></ul>
+<p>Se si verificasse una violazione della sicurezza che riguarda i Suoi dati e comporta verosimilmente un rischio elevato per Lei, La informiamo se necessario per la Sua protezione o se lo richiede l'IFPDT (art. 24 LPD), indicandoLe la natura dell'evento, le conseguenze e le misure adottate. Se la violazione riguarda i dati che una azienda cliente ha inserito nel gestionale, avvisiamo quell'azienda senza indugio e in ogni caso di regola entro 48 ore, come previsto dal DPA.</p>
+<p>Il Servizio ha per obiettivo una disponibilità del 99 per cento su base mensile. Se scopre una vulnerabilità di Vamio, La preghiamo di segnalarcela a <a href="mailto:info@vamio.ch">info@vamio.ch</a>: non avvieremo azioni contro chi la segnala in buona fede.</p>
+<h2 id="9-profilazione-e-decisioni-automatizzate">9. Profilazione e decisioni automatizzate</h2>
+<p>Non facciamo profilazione. Alcune operazioni vengono però eseguite dal sistema in modo interamente automatico e possono avere per Lei conseguenze significative ai sensi dell'art. 21 LPD: la sospensione dell'account se l'addebito mensile sulla carta non riesce, dopo i tentativi di addebito previsti, e il blocco di una registrazione da parte della protezione anti-abuso. In questi casi La informiamo per email e Lei può esporre il Suo punto di vista e chiedere a <a href="mailto:info@vamio.ch">info@vamio.ch</a> che la decisione sia riesaminata da una persona (art. 21 cpv. 1 e 2 LPD). In caso di pagamento e riattivazione dell'abbonamento i dati congelati vengono ripristinati integralmente.</p>
+<p>L'abbonamento annuale del piano Premium non è gestito in modo automatico: la sua validità è registrata con una data di scadenza e, se la fattura di rinnovo non viene pagata entro il termine indicato e dopo almeno un promemoria, l'abbonamento non si rinnova e l'account passa in sola lettura secondo le regole della sezione 6.</p>
+<p>L'assistente AI propone soltanto: ogni contenuto diventa efficace solo dopo la Sua conferma, quindi non si tratta di una decisione automatizzata.</p>
+<h2 id="10-i-suoi-diritti-e-come-esercitarli">10. I Suoi diritti e come esercitarli</h2>
+<p>Per i dati di cui siamo titolari (situazioni a e b della sezione 2) Lei può:</p>
+<ul class="p"><li><strong>accesso</strong>: sapere se trattiamo dati che La riguardano e ricevere le informazioni previste dall'art. 25 LPD (quali dati, per quali scopi, per quanto tempo, da dove vengono, a chi li comunichiamo e in quali Paesi) e, se ci sono, l'esistenza di una decisione presa in modo automatico e la logica su cui si fonda (art. 25 cpv. 2 lett. f LPD, si veda la sezione 9);</li><li><strong>consegna e trasmissione</strong>: ricevere in un formato elettronico corrente i dati che ci ha fornito, o farli trasmettere a un altro fornitore (art. 28 LPD; termine di 30 giorni secondo gli art. 22 e 18 cpv. 1 OPDa); può farlo da solo, dall'app, con l'export ZIP;</li><li><strong>rettifica</strong>: far correggere i dati inesatti (art. 32 cpv. 1 LPD) o, se non si può accertare né l'esattezza né l'inesattezza, far aggiungere una menzione che ne indichi il carattere contestato (art. 32 cpv. 3 LPD); la maggior parte dei dati la corregge direttamente nelle impostazioni;</li><li><strong>cancellazione e opposizione</strong>: chiedere che un trattamento o una comunicazione a terzi cessino e che i dati siano cancellati (art. 30 cpv. 2 lett. b e art. 32 cpv. 2 LPD), salvo i dati che dobbiamo conservare per legge;</li><li><strong>revoca</strong>: ritirare in ogni momento un consenso che ci ha dato (per esempio alle comunicazioni sul prodotto), con effetto per il futuro.</li></ul>
+<p><strong>Come fare</strong>: scriva a <a href="mailto:info@vamio.ch">info@vamio.ch</a>, preferibilmente dall'indirizzo email registrato nel Suo account, così possiamo riconoscerLa senza chiederLe altro. Se scrive da un altro indirizzo, potremmo chiederLe una conferma dall'account o una verifica equivalente; non Le chiediamo copie di documenti d'identità se non è indispensabile. Rispondiamo entro 30 giorni, gratuitamente; se ci serve più tempo, Le comunichiamo la proroga entro tale termine. Solo se una richiesta comporta un lavoro sproporzionato possiamo chiedere una partecipazione alle spese fino a un massimo di CHF 300, avvisandoLa prima e solo nei casi previsti dall'ordinanza (art. 19 OPDa). Se dovessimo rifiutare, limitare o rinviare una risposta, Le spieghiamo il motivo (art. 26 LPD).</p>
+<p>Se ritiene che il trattamento violi la legge, può rivolgersi all'Incaricato federale della protezione dei dati e della trasparenza (IFPDT), Feldeggweg 1, 3003 Berna, www.edoeb.admin.ch, oppure al giudice civile.</p>
+<p><strong>Dati inseriti da un'azienda cliente di Vamio</strong> (situazione c della sezione 2): il titolare è quell'azienda e le richieste vanno rivolte a lei. Se una richiesta arriva a noi, la trasmettiamo all'azienda entro 5 giorni lavorativi e la aiutiamo a rispondere con gli strumenti dell'app, senza rispondere al suo posto salvo obbligo di legge.</p>
+<h2 id="11-cookie-e-tecnologie-simili">11. Cookie e tecnologie simili</h2>
+<p>Usiamo solo cookie tecnici, necessari al funzionamento dell'app e del sito, per i quali non serve il Suo consenso. Nessun cookie pubblicitario, nessun cookie di terzi a fini di analisi.</p>
+<div class="tw" tabindex="0"><table>
+<thead><tr><th>Tipo di cookie</th><th>Chi lo imposta</th><th>A cosa serve</th><th>Durata</th></tr></thead>
+<tbody>
+<tr><td>Cookie di sessione</td><td>app.vamio.ch</td><td>Mantiene la Sua sessione dopo il login</td><td>Fino alla chiusura del browser o al logout</td></tr>
+<tr><td>Cookie di protezione dei moduli</td><td>app.vamio.ch</td><td>Protegge i moduli da invii fraudolenti</td><td>Sessione</td></tr>
+<tr><td>Cookie del dispositivo verificato con la verifica in due passaggi</td><td>app.vamio.ch</td><td>Ricorda un dispositivo già verificato, se sceglie l'opzione "ricorda questo dispositivo"</td><td>30 giorni</td></tr>
+<tr><td>Cookie tecnici Turnstile</td><td>Cloudflare</td><td>Protezione anti-bot alla registrazione e protezione dagli attacchi</td><td>Sessione</td></tr>
+</tbody></table></div>
+<p>Può cancellare i cookie dal Suo browser in ogni momento; senza i cookie tecnici non è possibile accedere all'app. Se in futuro introdurremo strumenti soggetti a consenso, aggiungeremo un banner e aggiorneremo questa sezione.</p>
+<h2 id="12-evoluzione-del-servizio-versioni-modifiche-e-lingua">12. Evoluzione del Servizio, versioni, modifiche e lingua</h2>
+<p>Questa informativa ha un numero di versione e una data di validità, riportati in testa. Le versioni precedenti restano disponibili su richiesta a <a href="mailto:info@vamio.ch">info@vamio.ch</a> e, quando la funzione sarà disponibile, scaricabili in PDF dall'app (Impostazioni, Documenti legali).</p>
+<p>Vamio è un Servizio in evoluzione: le funzioni disponibili possono essere ampliate o modificate nel tempo. Aggiorniamo questa informativa a ogni nuova funzione o nuovo fornitore, con il preavviso indicato qui sotto. Restano comunque garantiti la sicurezza dei dati, la loro archiviazione e il loro trattamento in Svizzera, l'export completo sempre disponibile, i 60 giorni di conservazione dopo la fine del contratto e la riservatezza; i prezzi cambiano solo con il preavviso di 60 giorni previsto dalle Condizioni d'uso.</p>
+<p>Ogni volta che aggiungiamo una funzione o un fornitore che cambia il modo in cui trattiamo i Suoi dati, pubblichiamo una nuova versione e La avvisiamo via email e nell'app almeno 30 giorni prima, con un riepilogo di cosa è cambiato; le correzioni puramente formali o a Suo favore entrano in vigore subito. Lo stesso preavviso di 30 giorni vale per le modifiche delle Condizioni d'uso e del DPA. Per le modifiche di prezzo vale invece il preavviso di 60 giorni previsto dalle Condizioni d'uso.</p>
+<p>L'informativa non è un contratto: alla registrazione Le chiediamo di prenderne visione, mentre le Condizioni d'uso e il DPA sono accettati espressamente con l'apposita casella.</p>
+<p>Il contratto con VAM Deco Sagl è concluso tra imprese ed è retto dal diritto svizzero, esclusa la Convenzione di Vienna sulla compravendita internazionale di merci. Il foro esclusivo è Bellinzona, sede iscritta del Fornitore, fatti salvi i fori imperativi previsti dalla legge.</p>
+<p>La presente informativa è redatta in italiano. Eventuali traduzioni future sono fornite per comodità; in caso di dubbio fa fede la versione italiana.</p>
+<hr>
+<p>Le versioni precedenti di questo documento sono disponibili su richiesta a <a href="mailto:info@vamio.ch">info@vamio.ch</a>.</p>
+<hr>
+<h2 id="identificazione-del-fornitore">Identificazione del fornitore</h2>
+<p><strong>VAM Deco Sagl</strong><br>Ragione sociale a registro: VAM Deco SAGL<br>Indirizzo postale: Via Pobbia 4d, 6514 Sementina, Svizzera<br>Sede legale iscritta: Bellinzona, Cantone Ticino (Sementina appartiene al comune di Bellinzona)<br>IDI: CHE-207.714.834<br>Numero CH-ID: CH-501-4027717-7<br>Iscritta nel registro di commercio del Cantone Ticino dal 3 gennaio 2023<br>Titolare: Michele Scacco<br>Estratto ufficiale del registro di commercio: https://ti.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-207.714.834<br>Contatti: <a href="mailto:info@vamio.ch">info@vamio.ch</a> (assistenza, protezione dei dati e segnalazioni di sicurezza)</p>
+<hr>
+<p>Documenti collegati: Condizioni generali d'uso di Vamio (CGU) e Accordo sul trattamento dei dati (DPA), entrambi accettati espressamente alla registrazione e disponibili nell'app in Impostazioni, Documenti legali.</p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="lbl">Fornitore del servizio</div>
+        <p><b>VAM Deco Sagl</b><br>Via Pobbia 4d, 6514 Sementina<br>sede legale a Bellinzona (Cantone Ticino, Svizzera)<br>IDI CHE-207.714.834, iscritta dal 3 gennaio 2023 nel registro di commercio del Cantone Ticino<br><a href="mailto:info@vamio.ch" style="display:inline">info@vamio.ch</a></p>
+      </div>
+      <div>
+        <div class="lbl">Gli altri documenti</div>
+        <a href="condizioni.html">Condizioni generali d'uso</a><a href="dpa.html">Trattamento dei dati (DPA)</a><a href="prova.html">Prova gratuita 30 giorni</a>
+      </div>
+    </div>
+    <div class="fine">Vamio, gestionale svizzero di offerte e fatture, prodotto di VAM Deco Sagl. Documenti legali pubblicati su vamio.ch/legale. Questa pagina riproduce integralmente il testo del documento: Versione 1.0, in vigore dal 4 settembre 2026.</div>
+  </div>
+</footer>
+
+</body>
+</html>
